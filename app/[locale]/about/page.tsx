@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { loadPage } from "@/lib/i18n/load-page";
 import type { LocaleParams } from "@/lib/i18n/resolve-locale";
 import { personJsonLd } from "@/lib/json-ld";
 import { pageMetadata } from "@/lib/seo";
-import { ImagePlaceholder } from "@/components/image-placeholder";
 import { JsonLd } from "@/components/json-ld";
 import { PageShell } from "@/components/page-shell";
 import { PageTitle } from "@/components/page-title";
@@ -34,7 +34,16 @@ export default async function AboutPage({ params }: { params: LocaleParams }) {
             <p className={`${bodyFont} text-sm m-0`}>{about.languages}</p>
           </div>
         </div>
-        <ImagePlaceholder label={about.photoPlaceholder} ratio="photo" />
+        <div className="relative w-full aspect-[4/5] border border-ink">
+          <Image
+            src="/about/photo.jpg"
+            alt={about.photoPlaceholder}
+            fill
+            priority
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="object-cover grayscale contrast-[1.05]"
+          />
+        </div>
       </div>
     </PageShell>
   );

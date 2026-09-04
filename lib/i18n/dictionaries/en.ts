@@ -225,7 +225,7 @@ export const en: Dictionary = {
         problem: "HR data for 22,000 employees scattered across legacy systems",
         built: "Migrated all records to BigQuery with data-quality pipelines",
         result: "22,000",
-        shotLabel: "Real pipeline screenshot",
+        shotLabel: "Pipeline screenshot",
       },
       {
         id: "case-pharma",
@@ -234,7 +234,7 @@ export const en: Dictionary = {
         problem: "Manual order processing, slow and error-prone",
         built: "Automated ERP system linked to Sheets and Gmail",
         result: "−70%",
-        shotLabel: "Real dashboard screenshot",
+        shotLabel: "Dashboard screenshot",
       },
       {
         id: "case-mfg",
@@ -243,7 +243,7 @@ export const en: Dictionary = {
         problem: "Manual production data entry every day",
         built: "Automated data capture with KPI dashboards",
         result: "−85%",
-        shotLabel: "Real KPI screenshot",
+        shotLabel: "KPI screenshot",
       },
       {
         id: "case-fintech",
@@ -252,7 +252,7 @@ export const en: Dictionary = {
         problem: "Manual monthly account reconciliation, slow",
         built: "Automated reconciliation via Drive API",
         result: "Auto",
-        shotLabel: "Real system screenshot",
+        shotLabel: "System screenshot",
       },
       {
         id: "case-royalties",
@@ -261,7 +261,7 @@ export const en: Dictionary = {
         problem: "Monthly P&L and royalties reports built by hand",
         built: "Fully automated monthly reporting",
         result: "Auto",
-        shotLabel: "Real report screenshot",
+        shotLabel: "Report screenshot",
       },
     ],
   },
@@ -326,7 +326,7 @@ export const en: Dictionary = {
     p2: "Now bringing that enterprise rigour to Thai SMBs running on Google Workspace, LINE and spreadsheets — building with Python, Django, FastAPI, Next.js, Google Cloud, and Gemini/Claude APIs.",
     langLabel: "Languages",
     languages: "Spanish · Catalan · English · learning Thai",
-    photoPlaceholder: "Photo working at a desk",
+    photoPlaceholder: "Hand holding a rose",
   },
   contact: {
     meta: {

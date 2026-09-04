@@ -225,7 +225,7 @@ export const th: Dictionary = {
         problem: "ข้อมูล HR ของพนักงาน 22,000 คนกระจัดกระจายในระบบเก่า",
         built: "ย้ายข้อมูลทั้งหมดสู่ BigQuery พร้อมไปป์ไลน์ตรวจสอบคุณภาพข้อมูล",
         result: "22,000",
-        shotLabel: "สกรีนช็อตไปป์ไลน์จริง",
+        shotLabel: "สกรีนช็อตไปป์ไลน์",
       },
       {
         id: "case-pharma",
@@ -234,7 +234,7 @@ export const th: Dictionary = {
         problem: "ประมวลผลออเดอร์ด้วยมือ ช้าและผิดพลาดบ่อย",
         built: "ระบบ ERP อัตโนมัติเชื่อมกับ Sheets และ Gmail",
         result: "−70%",
-        shotLabel: "สกรีนช็อตแดชบอร์ดจริง",
+        shotLabel: "สกรีนช็อตแดชบอร์ด",
       },
       {
         id: "case-mfg",
@@ -243,7 +243,7 @@ export const th: Dictionary = {
         problem: "กรอกข้อมูลการผลิตด้วยมือทุกวัน",
         built: "ระบบเก็บข้อมูลอัตโนมัติ พร้อมแดชบอร์ด KPI",
         result: "−85%",
-        shotLabel: "สกรีนช็อต KPI จริง",
+        shotLabel: "สกรีนช็อต KPI",
       },
       {
         id: "case-fintech",
@@ -252,7 +252,7 @@ export const th: Dictionary = {
         problem: "กระทบยอดบัญชีด้วยมือทุกสิ้นเดือน ใช้เวลานาน",
         built: "ระบบกระทบยอดอัตโนมัติผ่าน Drive API",
         result: "Auto",
-        shotLabel: "สกรีนช็อตระบบจริง",
+        shotLabel: "สกรีนช็อตระบบ",
       },
       {
         id: "case-royalties",
@@ -261,7 +261,7 @@ export const th: Dictionary = {
         problem: "รายงานกำไรขาดทุนและค่าลิขสิทธิ์ทำด้วยมือทุกเดือน",
         built: "รายงานที่สร้างเองอัตโนมัติทุกเดือน",
         result: "Auto",
-        shotLabel: "สกรีนช็อตรายงานจริง",
+        shotLabel: "สกรีนช็อตรายงาน",
       },
     ],
   },
@@ -326,7 +326,7 @@ export const th: Dictionary = {
     p2: "ตอนนี้นำความเข้มงวดระดับองค์กรมาสู่ธุรกิจ SME ไทยที่ทำงานผ่าน Google Workspace, LINE และสเปรดชีต — เขียนด้วย Python, Django, FastAPI, Next.js, Google Cloud และ Gemini/Claude APIs",
     langLabel: "ภาษา",
     languages: "สเปน · กาตาลัน · อังกฤษ · กำลังเรียนภาษาไทย",
-    photoPlaceholder: "รูปถ่ายทำงานที่โต๊ะ",
+    photoPlaceholder: "มือถือดอกกุหลาบ"
   },
   contact: {
     meta: {

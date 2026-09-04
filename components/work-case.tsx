@@ -1,6 +1,6 @@
+import Image from "next/image";
 import type { Dictionary } from "@/lib/i18n/dictionaries/types";
 import { AccentDot } from "./accent-dot";
-import { ImagePlaceholder } from "./image-placeholder";
 
 export function WorkCase({
   entry,
@@ -31,7 +31,15 @@ export function WorkCase({
           {entry.result}
         </div>
       </div>
-      <ImagePlaceholder label={entry.shotLabel} ratio="case" />
+      <div className="relative w-full aspect-[4/3] border border-ink">
+        <Image
+          src={`/work/${entry.id}.png`}
+          alt={entry.shotLabel}
+          fill
+          sizes="(min-width: 768px) 50vw, 100vw"
+          className="object-cover"
+        />
+      </div>
     </article>
   );
 }

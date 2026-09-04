@@ -141,6 +141,7 @@ export function personJsonLd(locale: Locale, description: string): JsonLdObject 
     name: siteFounder,
     description,
     url: absoluteUrl(siteUrl, locale, "/about"),
+    image: `${siteUrl}/about/photo.jpg`,
     worksFor: { "@id": organizationId(siteUrl) },
     address: {
       "@type": "PostalAddress",
