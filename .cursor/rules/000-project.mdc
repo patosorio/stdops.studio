@@ -1,0 +1,45 @@
+---
+description: Core project context for thai-business — read this first on every task
+alwaysApply: true
+---
+
+# thai-business website
+
+Patricia Osorio's Thailand-only services business, launched September 2026. This repo is
+the marketing site: Next.js 15 (App Router, TypeScript, strict), Tailwind CSS v4, deployed
+to Firebase App Hosting. TH is the primary market and default locale; EN is secondary.
+The Next.js app lives at the repository root — not in a nested `website/` folder.
+
+## Non-negotiables
+
+- Every page ships in `/th` (default) and `/en`. Never hardcode English strings in a
+  component body — pull copy from `lib/i18n/dictionaries/*.ts`.
+- Every page carries a LINE CTA, sticky on mobile. See `components/line-cta.tsx`.
+- Match the approved mockups in `docs/website html mockups/*.dc.html` pixel-for-pixel on
+  layout, spacing and typography. Those files are the source of truth for design — when in
+  doubt, open the matching `.dc.html` and read its inline styles, not this file's memory of
+  them. Ignore `docs/website html mockups/_ds/` entirely — it's an unused leftover design
+  system, not this project's look.
+- Design tokens live in `app/globals.css` as CSS variables (see 010-design-system.mdc).
+  Never hardcode a hex color, a px font-size, or a font-family string in a component —
+  reference the token.
+- Server-first: default to Server Components. Only add `"use client"` for actual
+  interactivity (lang toggle affordances, form state, mobile menu). Data fetching and
+  content lookup happen in Server Components / route handlers, not in the browser.
+- No hardcoded secrets, ever. Stripe/LINE/GA keys come from `.env.local` (never committed)
+  or Firebase App Hosting secrets (`apphosting.yaml` + `firebase apphosting:secrets:set`).
+
+## Stack
+
+- Next.js 15 App Router, TypeScript strict, React 19
+- Tailwind CSS v4 (CSS-first config via `@theme` in `app/globals.css` — no `tailwind.config.ts`)
+- Firebase App Hosting (SSR/ISR) for deploy; Firebase Auth reserved for future internal apps
+- Fonts: JetBrains Mono (structural/UI), IBM Plex Sans Thai (Thai body), Helvetica Neue (EN body)
+
+## Out of scope for this repo right now
+
+Stripe checkout logic, LINE webhook handlers, and the internal apps (quotation bot, AI
+flows) are future phases per the project roadmap. Don't build them speculatively — land the
+marketing site first. Flag anything that looks like scope creep rather than building it.
+Contact form submit is structure-only until a backend is wired. Photography slots are
+placeholders until assets are sourced.

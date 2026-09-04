@@ -1,0 +1,24 @@
+---
+description: TH/EN routing and content conventions
+globs: ["app/[locale]/**/*.tsx", "lib/i18n/**/*.ts"]
+alwaysApply: false
+---
+
+# i18n
+
+Route-based locales: `/th/...` (default, primary market) and `/en/...`. `/` redirects to
+`/th` via `middleware.ts`. No client-side language toggle state — the locale is the URL.
+
+- Every page component receives `params: Promise<{ locale: 'th' | 'en' }>` (Next 15 async
+  params) and looks up copy via `getDictionary(locale)`. Resolve the locale with
+  `resolveLocale(params)` so invalid segments 404 in one place.
+- Dictionaries live in `lib/i18n/dictionaries/th.ts` and `en.ts`, one exported object with
+  the same shape in both files (TypeScript will error on drift — keep it that way, don't
+  loosen the shared type).
+- Thai copy comes first when drafting a new page's content — translate to English second,
+  never the reverse (matches the business's Thai-first positioning).
+- Use `generateStaticParams` returning `[{ locale: 'th' }, { locale: 'en' }]` on every page
+  under `[locale]`, and set `alternates.languages` in `generateMetadata` for hreflang.
+- Pull real copy (proof numbers, case studies, pricing) from the matching `.dc.html` mockup
+  and `docs/website html mockups/thailand_services_campaign_pack.md` — don't invent
+  placeholder copy for anything that already has approved wording.

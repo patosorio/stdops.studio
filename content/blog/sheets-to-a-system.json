@@ -1,0 +1,25 @@
+{
+  "slug": "sheets-to-a-system",
+  "publishedAt": "2026-09-04",
+  "accent": "blue",
+  "th": {
+    "title": "จากสเปรดชีตสู่ระบบที่ทำงานเอง",
+    "excerpt": "ธุรกิจไทยส่วนใหญ่เริ่มที่ Google Sheets — จุดเปลี่ยนคือเมื่อชีตเริ่มแตก",
+    "body": [
+      { "type": "p", "text": "ธุรกิจไทยจำนวนมากทำงานผ่าน Google Sheets, LINE และอีเมลได้ดีมาหลายปี จนวันที่ชีตเริ่มช้า สูตรพัง และไม่มีใครกล้าแตะคอลัมน์สำคัญ" },
+      { "type": "h2", "text": "สิ่งที่ควรทำก่อนซื้อซอฟต์แวร์" },
+      { "type": "ul", "items": ["เขียนขั้นตอนงานจริงเป็นข้อ ๆ", "แยกข้อมูลที่ต้องถูกต้อง 100% ออกจากโน้ต", "เชื่อมจุดที่คนคัดลอกซ้ำทุกวัน"] },
+      { "type": "p", "text": "ระบบอัตโนมัติที่ดีไม่ได้แทนที่ชีตทันที แต่ดึงงานซ้ำออกมา แล้วให้ชีตเป็นหน้าต่างดูข้อมูล ไม่ใช่ที่เก็บความจริงทั้งหมด" }
+    ]
+  },
+  "en": {
+    "title": "From spreadsheet to a system that runs itself",
+    "excerpt": "Most Thai businesses start in Google Sheets — the turning point is when the sheet starts to crack.",
+    "body": [
+      { "type": "p", "text": "Plenty of Thai businesses run well for years on Google Sheets, LINE and email. The break comes when the sheet slows down, formulas fail, and nobody wants to touch the important columns." },
+      { "type": "h2", "text": "Do this before buying software" },
+      { "type": "ul", "items": ["Write the real workflow as a list", "Separate data that must be 100% right from notes", "Connect the steps people copy-paste every day"] },
+      { "type": "p", "text": "Good automation does not replace the sheet overnight. It pulls the repeated work out, and leaves the sheet as a window onto the data — not the only place the truth lives." }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "looker-studio-dashboard",
+  "publishedAt": "2026-09-04",
+  "accent": "green",
+  "th": {
+    "title": "Looker Studio คืออะไร — และทำไมแดชบอร์ดอย่างเดียวไม่พอ",
+    "excerpt": "เครื่องมือฟรีของ Google ทำรายงานสวยได้ แต่ธุรกิจที่ติดปัญหาอยู่ที่ท่อข้อมูล ไม่ใช่ที่สีของกราฟ",
+    "body": [
+      { "type": "p", "text": "Looker Studio คือเครื่องมือทำแดชบอร์ดฟรีของ Google ลากกราฟ เลือกสี แชร์ลิงก์ให้ทีมดูยอดได้จากเบราว์เซอร์ ไม่ต้องซื้อ Power BI หรือ Tableau เพื่อเริ่มต้น" },
+      { "type": "p", "text": "คำถามที่ตามมาเสมอคือจำเป็นแค่ไหน คำตอบตรง ๆ: หน้าจอจำเป็นเมื่อข้อมูลที่ป้อนเข้าไปถูกต้องและมาเองทุกวัน ถ้ายังคัดลอกจาก POS หนึ่งไฟล์ บัญชีอีกไฟล์ LINE อีกที่ แดชบอร์ดจะสวยและผิดในเวลาเดียวกัน" },
+      { "type": "h2", "text": "Looker Studio ทำอะไรได้จริง" },
+      { "type": "ul", "items": ["เชื่อมแหล่งข้อมูลที่ Google รองรับ แล้วแสดงเป็นกราฟ ตาราง คะแนน", "กรองตามสาขา ช่วงวันที่ ช่องทางขาย โดยไม่ต้องส่งไฟล์ใหม่ทุกครั้ง", "แชร์แบบดูได้อย่างเดียว ให้เจ้าของร้านและบัญชีดูชุดเดียวกัน"] },
+      { "type": "p", "text": "สิ่งที่มันไม่ทำ: ดึงยอดจากเครื่อง POS ทุกสาขาให้เอง ไม่กระทบยอดกับโปรแกรมบัญชี ไม่รวมออเดอร์ Shopee/Lazada กับแชท LINE ให้เป็นความจริงชุดเดียว นั่นคืองานไปป์ไลน์ — ท่อข้อมูล — ซึ่งอยู่ชั้นใต้แดชบอร์ด" },
+      { "type": "h2", "text": "ทำไมแดชบอร์ดอย่างเดียวถึงล้ม" },
+      { "type": "p", "text": "เคสที่พบบ่อยคือดาวน์โหลดเทมเพลต Looker Studio แล้วต่อกับ Google Sheet ที่คนกรอกมือทุกเย็น กราฟขึ้นในวันแรก สัปดาห์ที่สองใครลืมกรอก สัปดาห์ที่สามสาขาใช้คนละคอลัมน์ ตัวเลขบนจอไม่ตรงกับเงินในบัญชี และไม่มีใครเชื่อแดชบอร์ดอีก" },
+      { "type": "p", "text": "ปัญหาไม่ใช่ Looker Studio ปัญหาคือไม่มีชั้นที่ดึง ทำความสะอาด และเก็บข้อมูลอัตโนมัติ แดชบอร์ดเป็นแค่หน้าต่าง ถ้าหน้าต่างหันไปทางกองไฟล์ที่ไม่ตรงกัน จะเห็นแต่ความสับสนที่จัดวางสวย" },
+      { "type": "h2", "text": "งานที่คุ้มที่จะทำให้" },
+      { "type": "ul", "items": ["รวมยอดขายหลายสาขาจาก POS หรือไฟล์ส่งออก เข้าที่เดียว", "เทียบยอดขายกับรายการบัญชี โดยไม่รอสิ้นเดือน", "ดู Shopee, Lazada, LINE และหน้าร้านในมุมเดียวกัน"] },
+      { "type": "p", "text": "งานแบบนี้จบที่คลังข้อมูล เช่น BigQuery แล้วค่อยต่อ Looker Studio เป็นจอ ตัวจอเป็นส่วนที่ถูกที่สุดในโปรเจกต์ เพราะซอฟต์แวร์ฟรี ส่วนที่ต้องออกแบบคือท่อและกติกาว่าตัวเลขไหนคือความจริง" },
+      { "type": "h2", "text": "ทำ Dashboard Looker Studio ราคาเท่าไหร่" },
+      { "type": "p", "text": "ถ้าหมายถึงเปิดไฟล์ Looker Studio แล้วจัดกราฟจากชีตที่มีอยู่แล้ว ค่านั้นไม่สูง และหลายทีมทำเองได้ ถ้าหมายถึงระบบที่ดึงข้อมูลจาก POS บัญชี LINE และมาร์เก็ตเพลสเข้าคลัง แล้วมีแดชบอร์ดที่ตัวเลขตรงกับของจริง งาน Data Engineering เริ่มต้นที่ ฿180,000 ครอบคลุมท่อข้อมูล คลัง BigQuery และตัวจอ" },
+      { "type": "p", "text": "คุยฟรี 30 นาทีก่อนได้ใบเสนอราคาคงที่ ส่งตัวอย่างไฟล์ที่ดูอยู่ทุกเช้ามาด้วย จะรู้ทันทีว่าติดที่จอ หรือติดที่ท่อ" },
+      { "type": "h2", "text": "เริ่มเองได้ไหมก่อนจ้าง" },
+      { "type": "p", "text": "ได้ — เปิด Looker Studio ต่อชีตหลักแผ่นเดียว เลือกตัวเลขไม่เกินห้าตัวที่ตัดสินใจจริงทุกสัปดาห์ ถ้ายอดบนจอตรงกับยอดที่เชื่อถือได้อยู่แล้วสองสัปดาห์ติด คุณอาจยังไม่ต้องการท่อ ถ้าเปิดมาแล้วต้องแก้ชีตทุกเช้าก่อนกล้าส่งลิงก์ให้เจ้านาย นั่นคือสัญญาณว่าปัญหาไม่ได้อยู่ที่สีของกราฟ" }
+    ]
+  },
+  "en": {
+    "title": "What Looker Studio is — and why a dashboard alone is not enough",
+    "excerpt": "Google’s free reporting tool can look polished. The businesses that get stuck are missing the data pipe, not a nicer chart colour.",
+    "body": [
+      { "type": "p", "text": "Looker Studio is Google’s free dashboard tool. You drag charts, pick colours, and share a link so the team can see numbers in a browser. You do not need to buy Power BI or Tableau to start." },
+      { "type": "p", "text": "The question that always follows is whether you need it. Straight answer: the screen is useful when the data feeding it is correct and arrives every day on its own. If you still copy from one POS file, an accounting file, and LINE somewhere else, the dashboard will look good and be wrong at the same time." },
+      { "type": "h2", "text": "What Looker Studio actually does" },
+      { "type": "ul", "items": ["Connect sources Google supports, then show charts, tables and scorecards", "Filter by branch, date range or channel without sending a new file each time", "Share view-only so owners and accounts look at the same set"] },
+      { "type": "p", "text": "What it does not do: pull totals from every branch POS by itself, reconcile against accounting software, or merge Shopee/Lazada orders with LINE chats into one truth. That is pipeline work — the pipe under the dashboard." },
+      { "type": "h2", "text": "Why a dashboard-only project fails" },
+      { "type": "p", "text": "A common case: download a Looker Studio template, point it at a Sheet someone types into every evening. Charts appear on day one. Week two, someone forgets. Week three, a branch uses different columns. The number on screen does not match the money in the account, and nobody trusts the dashboard again." },
+      { "type": "p", "text": "Looker Studio is not the failure. The missing layer is the one that pulls, cleans and stores data automatically. A dashboard is a window. If the window faces a pile of files that disagree, you get confusion, neatly arranged." },
+      { "type": "h2", "text": "The work that is worth doing" },
+      { "type": "ul", "items": ["Combine multi-branch sales from POS or exports into one place", "Compare sales to accounting lines without waiting for month-end", "See Shopee, Lazada, LINE and the shop floor in one view"] },
+      { "type": "p", "text": "That work lands in a warehouse such as BigQuery, then Looker Studio is the screen. The screen is the cheapest part of the project because the software is free. The part you design is the pipe, and the rule for which number is the truth." },
+      { "type": "h2", "text": "How much does a Looker Studio dashboard cost?" },
+      { "type": "p", "text": "If you mean opening Looker Studio and arranging charts on a Sheet you already have, that cost is low, and many teams can do it themselves. If you mean a system that pulls POS, accounting, LINE and marketplace data into a warehouse, with a dashboard whose numbers match reality, Data Engineering starts at ฿180,000 — pipe, BigQuery warehouse, and the screen." },
+      { "type": "p", "text": "A free 30-minute call, then a fixed quote. Bring the files you already open every morning. It is obvious in one sitting whether you are stuck on the screen or stuck on the pipe." },
+      { "type": "h2", "text": "Can you start before you hire?" },
+      { "type": "p", "text": "Yes — open Looker Studio on one main sheet. Pick no more than five numbers you actually decide on each week. If the totals match the numbers you already trust for two weeks running, you may not need a pipe yet. If you have to repair the sheet every morning before you dare send the link upstairs, the problem is not the colour of the chart." }
+    ]
+  }
+}

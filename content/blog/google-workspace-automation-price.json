@@ -1,0 +1,49 @@
+{
+  "slug": "google-workspace-automation-price",
+  "publishedAt": "2026-09-04",
+  "accent": "blue",
+  "th": {
+    "title": "Google Workspace ราคาเท่าไหร่ — และงานอัตโนมัติราคาอีกเท่าไหร่",
+    "excerpt": "คนที่ค้นหาคำนี้ส่วนใหญ่ต้องการค่าสมัครของ Google ไม่ใช่เรทเอเจนซี่ สองตัวเลขนี้คนละใบเสร็จ",
+    "body": [
+      { "type": "p", "text": "เมื่อคนพิมพ์ Google Workspace ราคาเท่าไหร่ ส่วนใหญ่ต้องการรู้ว่า Google คิดค่าสมัครเท่าไหร่ต่อผู้ใช้ ไม่ใช่ว่าระบบอัตโนมัติบนชีตราคาเท่าไหร่ สองอย่างนี้คนละใบเสร็จ ปนกันแล้วตัวเลขจะไม่มีประโยชน์" },
+      { "type": "h2", "text": "ค่าสมัคร Google Workspace" },
+      { "type": "p", "text": "เป็นค่าบริการรายเดือนหรือรายปีที่จ่ายให้ Google โดยตรง แยกจากงานที่ใครมาเขียนให้ ราคาขึ้นกับแพ็กเกจ (Starter, Standard, Plus) จำนวนผู้ใช้ และโปรโมชัน ณ ตอนนั้น ตัวเลขเปลี่ยนบ่อยพอที่ถ้าใส่ไว้ในบทความนี้ จะผิดภายในไม่กี่เดือน" },
+      { "type": "p", "text": "ดูราคาปัจจุบันที่หน้าทางการของ Google Workspace แล้วคูณด้วยจำนวนคนที่ต้องมีอีเมลบริษัท นั่นคือต้นทุนไลเซนส์ ไม่ใช่ต้นทุนระบบอัตโนมัติ" },
+      { "type": "h2", "text": "ไลเซนส์ซื้ออะไรให้คุณ" },
+      { "type": "ul", "items": ["Gmail, Calendar, Drive, Meet ในโดเมนบริษัท", "Google Sheets, Forms, Docs ที่แชร์กันในองค์กร", "พื้นที่เก็บและความปลอดภัยตามแพ็กเกจที่เลือก"] },
+      { "type": "p", "text": "ไลเซนส์ไม่ได้ย้ายแถวจากชีตหนึ่งไปอีกชีต ไม่ได้ออกใบแจ้งหนี้เมื่อมีออเดอร์ใน LINE และไม่ได้ส่งอีเมลสรุปทุกเช้าให้เอง สิ่งนั้นคืองานเขียนสคริปต์" },
+      { "type": "h2", "text": "ราคาระบบอัตโนมัติ — คนละบรรทัด" },
+      { "type": "p", "text": "งานเชื่อม Sheets, Forms, Gmail, Drive, Calendar ให้ทำงานตามขั้นตอนจริง เริ่มต้นที่ ฿25,000 สำหรับหนึ่งระบบ: เขียนด้วย Apps Script แก้ไข 2 รอบ ซัพพอร์ต 30 วัน นั่นคือแพ็กเกจ Workspace Starter" },
+      { "type": "ul", "items": ["Workspace Starter ฿25,000 — หนึ่งระบบ อัตโนมัติจุดเดียว", "Workspace Pro ฿65,000 — สี่จุด บวกแดชบอร์ด Looker Studio อบรมทีม ซัพพอร์ต 60 วัน", "Workspace Ops จาก ฿120,000 — รับออเดอร์ สต็อก ใบแจ้งหนี้ รายงาน และผู้ช่วยบน LINE ในระบบเดียวกัน"] },
+      { "type": "p", "text": "งานที่ทำบ่อยที่สุดคือดึงข้อมูลระหว่างชีตสองไฟล์ ส่งอีเมลจากแถวในชีต และออกใบเสนอราคาหรือใบแจ้งหนี้จากฟอร์มที่ลูกค้ากรอก เชื่อม Google Form ให้แจ้งเตือนเข้า LINE ได้ในงานขนาดเล็ก — หลายเคสจบในวันเดียว" },
+      { "type": "h2", "text": "ยังไม่ต้องจ่ายงานอัตโนมัติ ถ้าอย่างนี้" },
+      { "type": "ul", "items": ["ชีตยังเล็ก คนเดียวดูแล และสูตรยังไม่พัง", "ขั้นตอนงานยังเขียนเป็นข้อ ๆ ไม่ได้ — ยังไม่รู้ว่าจะอัตโนมัติอะไร", "ปัญหาจริงคือยังไม่มีไลเซนส์ Workspace ใช้จีเมลส่วนตัวปนงานบริษัท"] },
+      { "type": "p", "text": "กรณีสุดท้าย: ซื้อไลเซนส์ Google ก่อน จัดอีเมลและสิทธิ์ให้เรียบร้อย แล้วค่อยคุยงานสคริปต์ ไม่งั้นจะมาแก้สิทธิ์แชร์ไฟล์มากกว่ามาทำระบบ" },
+      { "type": "h2", "text": "สรุปเป็นสองยอด" },
+      { "type": "p", "text": "ยอดหนึ่งจ่ายให้ Google ทุกเดือน ตามจำนวนผู้ใช้ ดูตัวเลขล่าสุดที่หน้าทางการของเขา ยอดสองจ่ายครั้งเดียวตอนสร้างระบบบนเครื่องมือนั้น เริ่มต้น ฿25,000 ถ้ายังสับสนว่าติดอยู่ที่ใบเสร็จไหน ส่งตัวอย่างชีตหรือฟอร์มที่ใช้ทุกวันมาทาง LINE จะแยกให้ได้ในคุยครั้งเดียว" }
+    ]
+  },
+  "en": {
+    "title": "Google Workspace pricing vs what automation actually costs",
+    "excerpt": "Most people who search this want Google’s subscription fee, not an agency rate. Those are two different invoices.",
+    "body": [
+      { "type": "p", "text": "When someone types how much Google Workspace costs, they usually want Google’s price per user — not the price of automation on top of Sheets. Those are two invoices. Mix them and the number is useless." },
+      { "type": "h2", "text": "The Google Workspace subscription" },
+      { "type": "p", "text": "That is a monthly or yearly fee you pay Google directly. It is separate from anyone writing scripts for you. The amount depends on the plan (Starter, Standard, Plus), headcount, and whatever promotion is running. The figures change often enough that putting them in this article would be wrong within months." },
+      { "type": "p", "text": "Check Google Workspace’s official pricing page, then multiply by the number of people who need a company email. That is licence cost. It is not automation cost." },
+      { "type": "h2", "text": "What the licence actually buys" },
+      { "type": "ul", "items": ["Gmail, Calendar, Drive and Meet on your domain", "Sheets, Forms and Docs shared inside the company", "Storage and security at the plan you picked"] },
+      { "type": "p", "text": "The licence does not move rows from one sheet to another. It does not issue an invoice when an order lands in LINE. It does not send a morning summary email on its own. That is script work." },
+      { "type": "h2", "text": "Automation pricing — a different line" },
+      { "type": "p", "text": "Wiring Sheets, Forms, Gmail, Drive and Calendar into a real workflow starts at ฿25,000 for one system: Apps Script, two revision rounds, 30 days of support. That is the Workspace Starter package." },
+      { "type": "ul", "items": ["Workspace Starter ฿25,000 — one workflow, one automation", "Workspace Pro ฿65,000 — four connection points, a Looker Studio dashboard, team training, 60 days support", "Workspace Ops from ฿120,000 — orders, stock, invoices, reports and a LINE assistant in one operating system"] },
+      { "type": "p", "text": "The most common builds pull data between two Sheets, send email from a row, and generate a quote or invoice from a form. Connecting a Google Form to a LINE notification is a small job — many of those finish the same day." },
+      { "type": "h2", "text": "You do not need to pay for automation yet if" },
+      { "type": "ul", "items": ["The sheet is still small, one person owns it, and the formulas still hold", "You cannot write the workflow as a list — you do not yet know what to automate", "The real problem is that you still have no Workspace licences, and personal Gmail is mixed into company work"] },
+      { "type": "p", "text": "That last case: buy the Google licences first, get email and permissions clean, then talk about scripts. Otherwise the project becomes a sharing-permissions cleanup, not a system." },
+      { "type": "h2", "text": "Two totals" },
+      { "type": "p", "text": "One total goes to Google every month, per user — use their official page for the current number. The other is a one-time build on top of those tools, from ฿25,000. If it is unclear which invoice you are stuck on, send the sheet or form you use every day on LINE. One conversation can split them." }
+    ]
+  }
+}

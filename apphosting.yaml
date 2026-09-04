@@ -1,0 +1,15 @@
+# https://firebase.google.com/docs/app-hosting/configure
+runConfig:
+  minInstances: 0
+  maxInstances: 2
+  cpu: 1
+  memoryMiB: 512
+
+env:
+  - variable: NEXT_PUBLIC_SITE_URL
+    value: https://stdops.studio
+    availability: [BUILD, RUNTIME]
+  # NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION — paste the content= value from
+  # Search Console's HTML-tag method, then set it the same way as SITE_URL.
+  # Secrets (Stripe, LINE, GA) via `firebase apphosting:secrets:set <NAME>`,
+  # then reference here with `secret: <NAME>` — never commit real values.

@@ -1,0 +1,24 @@
+{
+  "slug": "your-slug",
+  "publishedAt": "2026-09-10",
+  "accent": "blue",
+  "draft": true,
+  "th": {
+    "title": "หัวข้อภาษาไทย",
+    "excerpt": "ประโยคสรุปสั้น ๆ ที่แสดงในหน้ารายการ",
+    "body": [
+      { "type": "p", "text": "ย่อหน้าแรก" },
+      { "type": "h2", "text": "หัวข้อย่อย" },
+      { "type": "ul", "items": ["ข้อหนึ่ง", "ข้อสอง"] }
+    ]
+  },
+  "en": {
+    "title": "English title",
+    "excerpt": "One-line summary shown on the index.",
+    "body": [
+      { "type": "p", "text": "First paragraph." },
+      { "type": "h2", "text": "Section" },
+      { "type": "ul", "items": ["One", "Two"] }
+    ]
+  }
+}

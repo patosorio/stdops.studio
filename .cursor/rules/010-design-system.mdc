@@ -1,0 +1,42 @@
+---
+description: Visual design system — colors, type, layout rules for every page/component
+globs: ["app/**/*.tsx", "components/**/*.tsx", "app/globals.css"]
+alwaysApply: false
+---
+
+# Design system
+
+White background (#fff), black text (#000). Monospace (JetBrains Mono) for everything
+structural — nav, labels, buttons, numbers, kickers. Helvetica Neue for English body copy,
+IBM Plex Sans Thai for Thai body copy.
+
+## Colors — thin elements only, never fills
+
+Four accents, each tied to a service line. Use them for small dots, 1px rules on filled
+shapes, underlines, and left borders — never as a background fill, never on large
+surfaces, and never as text color against paper. Yellow (`#F8FF28`) and green (`#00FF3A`)
+fail contrast on white at every size; magenta (`#FF00FA`) fails at normal text size. Put
+an `<AccentDot>` (or a left border) next to ink-colored text instead.
+
+| Token | Hex | Service |
+|---|---|---|
+| `--color-accent-blue` | `#4600FD` | Workspace automation |
+| `--color-accent-yellow` | `#F8FF28` | Web dev + web apps |
+| `--color-accent-red` | `#FF00FA` | AI flows |
+| `--color-accent-green` | `#00FF3A` | Data engineering + data flows |
+
+## Hard rules
+
+- No cards, no drop shadows, no gradients, no stock photography.
+- No rounded corners on structural elements (buttons/inputs are square-cornered, 1px
+  borders) — this is not the "Organic" system in `_ds/`, ignore that folder completely.
+- Section titles are ink; mark the service line with an AccentDot or left border, not
+  colored type. Body text is always black on white.
+- LINE CTA button always carries the green dot + "LINE" label pattern from the mockups.
+- Tabular numbers (`font-variant-numeric: tabular-nums`) on all stats/prices.
+
+## Implementation
+
+Tokens are CSS variables defined once in `app/globals.css` under `@theme`. Reference them
+as Tailwind utilities — never inline a hex value in a `.tsx` file. If a mockup uses a value
+not yet in `globals.css`, add the token there first, then use it.

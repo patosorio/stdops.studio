@@ -1,0 +1,7 @@
+{
+  "apphosting": {
+    "backendId": "thai-business-website",
+    "rootDir": "/",
+    "ignore": ["node_modules", ".git", ".next"]
+  }
+}

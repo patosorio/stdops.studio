@@ -1,6 +1,6 @@
 # stdops
 
-Marketing site for [stdops](https://your-domain.com) — Patricia Osorio’s Thailand-only automation studio, based in Bangkok. Thai is the primary market and default locale; English is secondary.
+Marketing site for [stdops](https://stdops.studio) — Patricia Osorio’s Thailand-only automation studio, based in Bangkok. Thai is the primary market and default locale; English is secondary.
 
 The app lives at the repository root (Next.js 15 App Router). It deploys to Firebase App Hosting.
 

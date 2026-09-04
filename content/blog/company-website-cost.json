@@ -1,0 +1,49 @@
+{
+  "slug": "company-website-cost",
+  "publishedAt": "2026-09-04",
+  "accent": "yellow",
+  "th": {
+    "title": "ทำเว็บไซต์บริษัท เท่าไหร่",
+    "excerpt": "ตัวเลขจริงสำหรับเว็บไซต์ธุรกิจในไทย — อะไรรวมในราคา อะไรไม่รวม และเมื่อไหร่ที่ควรจ่ายมากกว่านี้",
+    "body": [
+      { "type": "p", "text": "คำถามที่เจ้าของธุรกิจถามก่อนคุยรายละเอียดคือทำเว็บไซต์บริษัทเท่าไหร่ คำตอบสั้น ๆ: เว็บไซต์ธุรกิจที่เขียนด้วยโค้ด รองรับไทย-อังกฤษ 5–8 หน้า เชื่อมต่อ LINE เริ่มต้นที่ ฿45,000 คุณเป็นเจ้าของโค้ดเอง 100%" },
+      { "type": "p", "text": "ตัวเลขนี้ไม่ใช่เว็บขายของบนมาร์เก็ตเพลส และไม่ใช่ระบบจองคิวหรือพอร์ทัลลูกค้า สองอย่างนั้นเป็นเว็บแอป ราคาเริ่มอีกเส้น ราว ฿150,000 หลังคุยความต้องการแล้วได้ใบเสนอราคาคงที่" },
+      { "type": "h2", "text": "฿45,000 รวมอะไรบ้าง" },
+      { "type": "ul", "items": ["เว็บ 5–8 หน้า ทั้งภาษาไทยและอังกฤษ", "เขียนด้วย Next.js ไม่ใช่ WordPress หรือเครื่องมือลากวาง", "ชื่อหน้า คำอธิบายหน้า และโครงสร้างที่ค้นหาเจอได้ — ไม่คิดเพิ่มเป็นบริการ SEO", "ปุ่มติดต่อทาง LINE", "โค้ดเป็นของคุณ ย้ายโฮสต์ไปที่ไหนก็ได้"] },
+      { "type": "p", "text": "สิ่งที่ไม่รวม: ถ่ายภาพ เขียนคอนเทนต์ยาว ๆ โฮสติ้งรายเดือน และงานออกแบบโลโก้ใหม่ ถ้ายังไม่มีโลโก้หรือรูปที่ใช้ได้ คุยกันก่อนจะได้ตัวเลขที่ไม่เซอร์ไพรส์ตอนส่งงาน" },
+      { "type": "h2", "text": "ทำไมช่วงราคากว้างขนาดนี้ในตลาด" },
+      { "type": "p", "text": "โฆษณาทำเว็บ ฿3,000–฿8,000 ส่วนใหญ่เป็นเทมเพลตสำเร็จรูป คุณเช่า ไม่ได้เป็นเจ้าของ เมื่ออยากแก้โครงสร้างจริง ๆ ต้องจ่ายใหม่หรือย้ายไม่ได้ งานเอเจนซี่ใหญ่ในกรุงเทพฯ มักเริ่มหลักแสน เพราะมีทีมขาย ทีมครีเอทีฟ และสไลค์นำเสนอหลายรอบ" },
+      { "type": "p", "text": "฿45,000 อยู่ตรงกลาง: สูงกว่างานเทมเพลต เพราะได้โค้ดที่ย้ายได้และโหลดเร็ว ต่ำกว่าเอเจนซี่ใหญ่ เพราะคุยกับคนที่ลงมือเขียนโดยตรง ไม่ผ่านเลเยอร์ขาย" },
+      { "type": "h2", "text": "WordPress และ Wix ถูกกว่าจริงไหม" },
+      { "type": "p", "text": "ตอนเปิดตัวถูกกว่า — เทมเพลตพร้อมใช้ในสัปดาห์เดียว แต่ทุกครั้งที่อัปเดตปลั๊กอินมีความเสี่ยง ธีมที่ซื้อมาแก้ยาก และคุณไม่ได้ถือของที่พกไปโฮสต์อื่นได้จริง ค่าไลเซนส์ปลั๊กอินกับค่าดูแลรายปีสะสมแล้วมักแซงราคาเว็บที่เขียนครั้งเดียวภายในสองปี" },
+      { "type": "p", "text": "เว็บที่เขียนด้วยโค้ดเริ่มต้นช้ากว่านิดหน่อย แต่แก้หน้า เพิ่มภาษา หรือต่อ LINE ได้โดยไม่ต้องกลัวว่าปลั๊กอินจะชนกัน" },
+      { "type": "h2", "text": "เมื่อไหร่ที่ต้องงบเว็บแอป" },
+      { "type": "ul", "items": ["ลูกค้าต้องล็อกอิน ดูสถานะงาน หรือจองคิว", "ทีมภายในต้องกรอกข้อมูลที่ชีตรับไม่ไหวแล้ว", "มีขั้นตอนอนุมัติ ใบเสนอราคา หรือคลังสินค้าบนเว็บ"] },
+      { "type": "p", "text": "งานแบบนี้เริ่มต้นประมาณ ฿150,000 เพราะมีฐานข้อมูล สิทธิ์ผู้ใช้ และการทดสอบกับข้อมูลจริง ไม่ใช่แค่หน้าประชาสัมพันธ์ คุยฟรี 30 นาทีก่อนได้ใบเสนอราคาคงที่ภายใน 48 ชั่วโมง" },
+      { "type": "h2", "text": "วิธีคิดงบก่อนทักมา" },
+      { "type": "p", "text": "ถ้าต้องการหน้าบริษัทให้ลูกค้าหาเจอ เชื่อถือ และทัก LINE ได้ — งบ ฿45,000 ครอบคลุม ถ้าต้องการให้ลูกค้าหรือพนักงานทำงานบนเว็บได้จริง เตรียมงบเว็บแอปไว้ต่างหาก อย่ารวมสองอย่างในใบเสนอราคาเดียวแล้วคาดว่าได้ราคาเว็บไซต์" }
+    ]
+  },
+  "en": {
+    "title": "How much does a company website cost in Thailand?",
+    "excerpt": "Real numbers for a Thai business site — what the price includes, what it does not, and when you should spend more.",
+    "body": [
+      { "type": "p", "text": "The first question most owners ask is how much a company website costs. The short answer: a business site written as code, Thai and English, 5–8 pages, with LINE contact, starts at ฿45,000. You own the code outright." },
+      { "type": "p", "text": "That number is not a marketplace storefront, and it is not a booking system or client portal. Those are web apps. They start on a different line, around ฿150,000, after a discovery call and a fixed written quote." },
+      { "type": "h2", "text": "What ฿45,000 actually includes" },
+      { "type": "ul", "items": ["5–8 pages in Thai and English", "Built in Next.js — not WordPress or a drag-and-drop builder", "Page titles, meta descriptions and semantic HTML so search can find you — not a paid SEO add-on", "A LINE contact path", "The code is yours. Move host whenever you want."] },
+      { "type": "p", "text": "What it does not include: photography, long-form copywriting, monthly hosting, or a new logo. If you do not have a logo or usable photos yet, say so on the call so the number does not jump at delivery." },
+      { "type": "h2", "text": "Why the market range is so wide" },
+      { "type": "p", "text": "Ads for a ฿3,000–฿8,000 website are usually a rented template. You do not own it. Changing the structure later means paying again, or discovering you cannot leave. Large Bangkok agencies often start in the hundreds of thousands because you are paying for a sales team, a creative team and several rounds of pitch decks." },
+      { "type": "p", "text": "฿45,000 sits in the middle: more than a template, because you get portable code and a fast site; less than a big agency, because you talk to the person who writes it." },
+      { "type": "h2", "text": "Are WordPress and Wix actually cheaper?" },
+      { "type": "p", "text": "At launch, yes — a theme can be live in a week. Every plugin update is a risk, bought themes are hard to change, and you do not hold anything you can take to another host. Plugin licences and yearly care usually overtake a one-time coded site within two years." },
+      { "type": "p", "text": "A coded site takes a little longer to start. After that, adding a page, a language or a LINE flow does not depend on two plugins agreeing with each other." },
+      { "type": "h2", "text": "When you actually need a web-app budget" },
+      { "type": "ul", "items": ["Customers must log in, see job status, or book a slot", "Your team is entering data that a spreadsheet can no longer hold", "Approvals, quotes or stock need to live on the web"] },
+      { "type": "p", "text": "That work starts around ฿150,000 because it has a database, user permissions and tests against real data — not a brochure. A free 30-minute call, then a fixed quote in writing within 48 hours." },
+      { "type": "h2", "text": "How to budget before you message" },
+      { "type": "p", "text": "If you need a company site people can find, trust and contact on LINE, ฿45,000 covers it. If customers or staff must do real work in the browser, budget a web app separately. Do not put both in one quote and expect website pricing." }
+    ]
+  }
+}

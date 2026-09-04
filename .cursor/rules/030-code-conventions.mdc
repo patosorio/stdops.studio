@@ -1,0 +1,18 @@
+---
+description: TypeScript/React coding conventions for this repo
+alwaysApply: true
+---
+
+# Code conventions
+
+- TypeScript strict, no `any`. Type every component's props explicitly.
+- Functional components only. Server Components by default; `"use client"` only where the
+  component genuinely needs browser state or events.
+- One component per file, named exports. No barrel `index.ts` files.
+- Styling is Tailwind utility classes only — no CSS-in-JS, no styled-components, no inline
+  `style={{}}` except for genuinely dynamic per-instance values (e.g. a color prop driving
+  a border color from the service-color map).
+- Prices, stats, and any numeric proof points render with `tabular-nums` and come from a
+  typed constant, never a magic string re-typed per page.
+- Run `npm run lint` and `npm run typecheck` clean before considering a page done.
+- Commit messages: conventional commits (`feat:`, `fix:`, `chore:`, `content:`).

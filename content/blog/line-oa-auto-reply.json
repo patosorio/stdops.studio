@@ -1,0 +1,51 @@
+{
+  "slug": "line-oa-auto-reply",
+  "publishedAt": "2026-09-04",
+  "accent": "red",
+  "th": {
+    "title": "ตอบแชทอัตโนมัติ LINE OA เจ้าไหนดี",
+    "excerpt": "เปรียบเทียบสามทาง: ตอบอัตโนมัติในตัวของ LINE, แพลตฟอร์มสำเร็จรูป และ AI ที่รู้ธุรกิจคุณ — ไม่ใช่ตารางคะแนนของเอเจนซี่",
+    "body": [
+      { "type": "p", "text": "ธุรกิจไทยจำนวนมากเปิด LINE Official Account แล้วติดกับคำถามเดิม: ตอบแชทอัตโนมัติ LINE OA เจ้าไหนดี คำตอบไม่ได้อยู่ที่โลโก้เอเจนซี่ แต่อยู่ที่ปริมาณแชท ความซับซ้อนของคำถาม และว่าคุณยอมให้บอทเดาเมื่อไม่รู้หรือไม่" },
+      { "type": "p", "text": "มีสามทางที่ใช้กันจริง ไม่ใช่สิบเจ้าที่โฆษณาคล้ายกัน" },
+      { "type": "h2", "text": "ทางที่ 1 — ตอบอัตโนมัติในตัวของ LINE OA" },
+      { "type": "p", "text": "LINE ให้ตั้งคำสำคัญกับข้อความตายตัวได้ในบัญชีทางการเอง ฟรีในแพ็กเกจ OA ที่ใช้อยู่แล้ว เหมาะกับคำถามซ้ำที่คำตอบไม่เปลี่ยน เช่น เวลาเปิดปิด ที่อยู่ ลิงก์ชำระเงิน เมนูสินค้าชุดเดียว" },
+      { "type": "ul", "items": ["เริ่มวันนี้ได้ ไม่ต้องจ้างใคร", "ลูกค้าพิมพ์ไม่ตรงคำสำคัญ ระบบเงียบหรือตอบผิดชุด", "อ่านสลิป เช็คสต็อก หรือออกใบเสนอราคาไม่ได้", "พอคำถามเริ่มหลากหลาย ชุดคำสำคัญรับไม่ไหว"] },
+      { "type": "p", "text": "ถ้าแชทวันละไม่กี่สิบข้อความและคำตอบส่วนใหญ่เหมือนกัน เริ่มที่นี่ก่อน จ้างทำทั้งระบบทั้งที่ยังไม่จำเป็นคือเงินที่ควรเก็บไว้ทำอย่างอื่น" },
+      { "type": "h2", "text": "ทางที่ 2 — แพลตฟอร์มสำเร็จรูป" },
+      { "type": "p", "text": "เครื่องมืออย่าง ManyChat, Respond.io หรือแพลตฟอร์มไทยที่ต่อ LINE ให้ลากโฟลว์ได้โดยไม่เขียนโค้ด จ่ายรายเดือน ได้รายงานและคนดูแลหลายบัญชีในที่เดียว เหมาะกับทีมที่ต้องการเมนู บรอดแคสต์ และโฟลว์จองคิวแบบตายตัว" },
+      { "type": "ul", "items": ["ตั้งค่าได้เร็ว ทีมการตลาดดูแลเองได้", "ค่าบริการรายเดือนสะสม บางเจ้าคิดตามจำนวนแชท", "ข้อมูลลูกค้าอยู่ในระบบเขา — ย้ายออกทีหลังเจ็บ", "ยังเป็นกฎและปุ่ม ไม่ใช่ความเข้าใจบริบท"] },
+      { "type": "p", "text": "ถ้าปัญหาคือส่งข้อความชุดเดียวกันให้ลูกค้าเป็นพันคน และรับคำสั่งซื้อตามฟอร์ม แพลตฟอร์มพวกนี้ทำได้ดี ถ้าปัญหาคือลูกค้าส่งรูปสลิปแล้วถามว่าของถึงเมื่อไหร่ โฟลว์ลากวางจะพังตรงประโยคที่สอง" },
+      { "type": "h2", "text": "ทางที่ 3 — AI ที่รู้ธุรกิจคุณ" },
+      { "type": "p", "text": "เอเจนต์ที่สร้างด้วย Gemini หรือ Claude อ่านข้อความจริงของร้านคุณ ไม่ใช่แค่คำสำคัญ เชื่อมกับชีตหรือระบบที่มีอยู่ ตอบเรื่องราคา ตาราง สต็อก และอ่านสลิปโอนเงินได้ ถ้าออกแบบมาเพื่องานนั้น" },
+      { "type": "p", "text": "ข้อแลกที่คนขายบอทไม่ค่อยพูด: โมเดลเดาได้เมื่อไม่รู้ ธุรกิจที่ใส่บอทขึ้นไลน์โดยไม่ทดสอบก่อน มักเจอคำตอบที่สุภาพแต่ผิด ซึ่งแย่กว่าไม่ตอบ" },
+      { "type": "ul", "items": ["ต้องมีชุดทดสอบ (eval set) จากแชทจริงก่อนเปิดใช้กับลูกค้า", "ต้องมีทางให้คนรับช่วงเมื่อบอทไม่มั่นใจ", "งบเริ่มต้นราว ฿40,000 รวมปรับจูน 30 วัน ไม่ใช่ค่าไลเซนส์รายเดือนของแพลตฟอร์ม", "คุณถือโฟลว์และข้อมูล ไม่ติดระบบปิดเจ้าใดเจ้าหนึ่ง"] },
+      { "type": "h2", "text": "เลือกยังไงในประโยคเดียว" },
+      { "type": "ul", "items": ["คำถามซ้ำ คำตอบตายตัว ปริมาณน้อย — ใช้ของ LINE เอง", "บรอดแคสต์ เมนู โฟลว์จองแบบเดิมทุกวัน — แพลตฟอร์มสำเร็จรูป", "ลูกค้าพิมพ์อิสระ ส่งรูป ถามสต็อกหรือสถานะออเดอร์ — จ้างทำ AI ที่ทดสอบแล้ว"] },
+      { "type": "p", "text": "อย่าเลือกจากรีวิวสิบเจ้าในโพสต์เดียว ส่งแชทจริงสิบข้อความที่ทีมตอบอยู่ทุกวันมาเป็นตัวอย่าง ทางที่ตอบสิบข้อความนั้นได้โดยไม่เดา คือทางที่ถูก" }
+    ]
+  },
+  "en": {
+    "title": "LINE OA auto-reply: which option is actually worth it?",
+    "excerpt": "Three real paths: LINE’s built-in replies, a SaaS platform, and an AI that knows your business — not an agency scorecard.",
+    "body": [
+      { "type": "p", "text": "Plenty of Thai businesses open a LINE Official Account and stall on the same question: which auto-reply is actually worth it? The answer is not an agency logo. It is chat volume, how messy the questions are, and whether you will let a bot guess when it does not know." },
+      { "type": "p", "text": "There are three paths people actually use — not ten vendors with similar ads." },
+      { "type": "h2", "text": "Path 1 — LINE OA’s built-in auto-reply" },
+      { "type": "p", "text": "LINE lets you map keywords to fixed replies inside the official account. It is already in the OA plan you pay for. It fits questions whose answers never change: opening hours, address, a payment link, one product menu." },
+      { "type": "ul", "items": ["You can start today. No one to hire.", "If the customer does not type the keyword, the system stays quiet or sends the wrong block.", "It cannot read a slip, check stock, or issue a quote.", "Once questions branch, the keyword list does not hold."] },
+      { "type": "p", "text": "If you get a few dozen chats a day and most answers are identical, start here. Paying for a full build before you need one is money that should go somewhere else." },
+      { "type": "h2", "text": "Path 2 — a packaged platform" },
+      { "type": "p", "text": "Tools like ManyChat, Respond.io, or Thai LINE platforms let you drag flows without writing code. You pay monthly, get reporting, and can run several accounts in one place. They fit teams that need menus, broadcasts and a fixed booking flow." },
+      { "type": "ul", "items": ["Fast to set up. Marketing can own it.", "The monthly fee adds up. Some vendors bill per conversation.", "Customer data lives in their system — leaving later hurts.", "It is still rules and buttons, not context."] },
+      { "type": "p", "text": "If the job is sending the same campaign to thousands of customers and taking orders through a form, these tools do it well. If the job is a photo of a transfer slip plus when will this arrive, a drag-and-drop flow breaks on the second sentence." },
+      { "type": "h2", "text": "Path 3 — an AI that knows your business" },
+      { "type": "p", "text": "An agent built on Gemini or Claude reads the actual messages your shop gets, not only keywords. It can talk to a Sheet or the system you already run, answer on price, schedule and stock, and read payment slips if it was designed for that." },
+      { "type": "p", "text": "The trade-off vendors skip: models guess when they do not know. A bot put on LINE without tests often answers politely and wrongly, which is worse than silence." },
+      { "type": "ul", "items": ["You need an eval set from real chats before customers see it", "A human must be able to take over when the bot is unsure", "Builds start around ฿40,000 including 30 days of tuning — not a platform licence", "You hold the flow and the data. You are not stuck in one closed tool."] },
+      { "type": "h2", "text": "How to choose in one sentence" },
+      { "type": "ul", "items": ["Repeated questions, fixed answers, low volume — use LINE’s own replies", "Broadcasts, menus, the same booking flow every day — a packaged platform", "Free-form chat, photos, stock or order status — a tested custom AI"] },
+      { "type": "p", "text": "Do not pick from a ten-vendor roundup. Send ten real chats your team already answers every day. The path that can handle those ten without guessing is the right one." }
+    ]
+  }
+}

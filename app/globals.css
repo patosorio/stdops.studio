@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+/* Design tokens — single source of truth. Never hardcode a hex/font/px value in a
+   component; add or use a token here instead. See .cursor/rules/010-design-system.mdc. */
+@theme {
+  --color-ink: #000000;
+  --color-paper: #ffffff;
+
+  --color-accent-blue: #4600fd;   /* Workspace automation */
+  --color-accent-yellow: #f8ff28; /* Web dev + web apps */
+  --color-accent-red: #ff00fa;    /* AI flows */
+  --color-accent-green: #00ff3a;  /* Data engineering + data flows */
+
+  --font-mono: var(--font-jetbrains, "JetBrains Mono"), ui-monospace, monospace;
+  --font-thai: var(--font-ibm-plex-thai, "IBM Plex Sans Thai"), sans-serif;
+  --font-en: "Helvetica Neue", Arial, sans-serif;
+
+  /* Wordmark lockup — +1px from the logo spec (45 / 17 / 36×2 / 10) */
+  --text-wordmark: 2.8125rem;
+  --text-wordmark-compact: 1rem;
+  --text-wordmark-studio: 1.0625rem;
+  --text-wordmark-studio-compact: 0.5625rem;
+  --tracking-wordmark: -0.01em;
+  --tracking-wordmark-studio: 0.08em;
+  --spacing-wordmark: 0.625rem;
+  --spacing-wordmark-compact: 0.25rem;
+  --width-wordmark-rule: 2.25rem;
+  --width-wordmark-rule-compact: 0.75rem;
+  --height-wordmark-rule: 2px;
+
+  /* Sticky LINE bar — extra space for the iOS home indicator */
+  --spacing-sticky-cta: 4rem;
+  --spacing-safe-bottom: env(safe-area-inset-bottom, 0px);
+  --spacing-safe-top: env(safe-area-inset-top, 0px);
+
+  /* Fixed nav offset for in-page anchors (mobile bar is py-5 + 44px toggle) */
+  --spacing-nav: 5.25rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  overflow-x: hidden;
+  overflow-x: clip;
+  scroll-padding-top: calc(var(--spacing-nav) + var(--spacing-safe-top));
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+#services {
+  scroll-margin-top: calc(var(--spacing-nav) + var(--spacing-safe-top));
+}
+
+@media (max-width: 1023px) {
+  html {
+    scroll-padding-bottom: calc(var(--spacing-sticky-cta) + var(--spacing-safe-bottom));
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a, button {
+  touch-action: manipulation;
+}
+
+a { color: inherit; }
+::selection { background: var(--color-accent-blue); color: var(--color-paper); }
+.tabular-nums { font-variant-numeric: tabular-nums; }
+
+input, textarea, button {
+  font-family: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+input, textarea {
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus { outline: 2px solid var(--color-accent-blue); }
