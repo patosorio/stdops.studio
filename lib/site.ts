@@ -1,7 +1,7 @@
 import type { Locale } from "@/lib/i18n/config";
 
 export const siteName = "stdops";
-export const siteLegalName = "stdops studio";
+export const siteLegalName = "standard operations studio";
 export const siteFounder = "Patricia Osorio";
 export const siteCity = "Bangkok";
 export const siteCountryCode = "TH";

@@ -1,3 +1,5 @@
+import { siteLegalName } from "@/lib/site";
+
 export function Wordmark({
   variant = "compact",
   inverted = false,
@@ -12,9 +14,12 @@ export function Wordmark({
 
   return (
     <span
+      role="img"
+      aria-label={siteLegalName}
       className={`inline-flex flex-col items-center leading-none ${full ? "gap-wordmark" : "gap-wordmark-compact"} ${className}`}
     >
       <span
+        aria-hidden
         className={`font-mono font-bold tracking-wordmark ${inkClass} ${full ? "text-wordmark" : "text-wordmark-compact"}`}
       >
         std.ops
@@ -24,6 +29,7 @@ export function Wordmark({
         aria-hidden
       />
       <span
+        aria-hidden
         className={`font-mono font-thin tracking-wordmark-studio ${inkClass} ${full ? "text-wordmark-studio" : "text-wordmark-studio-compact"}`}
       >
         studio_

@@ -343,5 +343,5 @@ export const en: Dictionary = {
     msgLabel: "What do you want to automate?",
     sendLabel: "Send",
   },
-  footer: { line: "Chat on LINE", copyright: `© ${new Date().getFullYear()} stdops studio.` },
+  footer: { line: "Chat on LINE", copyright: `© ${new Date().getFullYear()} standard operations studio` },
 };

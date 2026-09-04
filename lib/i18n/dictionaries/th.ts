@@ -343,5 +343,5 @@ export const th: Dictionary = {
     msgLabel: "คุณอยากทำอะไรเป็นอัตโนมัติ?",
     sendLabel: "ส่ง",
   },
-  footer: { line: "แชททาง LINE", copyright: `© ${new Date().getFullYear()} stdops studio.` },
+  footer: { line: "แชททาง LINE", copyright: `© ${new Date().getFullYear()} standard operations studio` },
 };

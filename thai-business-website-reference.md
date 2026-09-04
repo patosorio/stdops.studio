@@ -1,7 +1,6 @@
 # thai-business website — build reference
 
-Everything below is content for you (or Cursor) to create locally. I haven't touched your
-project folder — this is just the plan and the code, ready to paste in.
+Everything below is content for you to create locally. This is just the plan and the code, ready to paste in.
 
 ## Architecture decisions, with tradeoffs
 

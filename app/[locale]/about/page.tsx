@@ -34,14 +34,14 @@ export default async function AboutPage({ params }: { params: LocaleParams }) {
             <p className={`${bodyFont} text-sm m-0`}>{about.languages}</p>
           </div>
         </div>
-        <div className="relative w-full aspect-[4/5] border border-ink">
+        <div className="relative w-full aspect-[3/4] border border-ink md:-mt-8">
           <Image
             src="/about/photo.jpg"
             alt={about.photoPlaceholder}
             fill
             priority
             sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover grayscale contrast-[1.05]"
+            className="object-cover"
           />
         </div>
       </div>
