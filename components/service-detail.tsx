@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 import type { ServicePageCopy } from "@/lib/i18n/dictionaries/types";
@@ -6,7 +7,6 @@ import { siteName } from "@/lib/site";
 import { AccentDot } from "./accent-dot";
 import { ExampleCallout } from "./example-callout";
 import { Faq } from "./faq";
-import { ImagePlaceholder } from "./image-placeholder";
 import { JsonLd } from "./json-ld";
 import { PageShell } from "./page-shell";
 import { PriceRow } from "./price-row";
@@ -20,6 +20,7 @@ export function ServiceDetail({
   locale,
   path,
   backLabel,
+  imageSrc,
 }: {
   content: ServicePageCopy;
   accent: string;
@@ -27,6 +28,7 @@ export function ServiceDetail({
   locale: Locale;
   path: string;
   backLabel: string;
+  imageSrc?: string;
 }) {
   return (
     <PageShell width="copy">
@@ -84,8 +86,24 @@ export function ServiceDetail({
         bodyFont={bodyFont}
       />
 
-      <div className={content.starting ? "mb-12" : undefined}>
-        <ImagePlaceholder label={content.shotPlaceholder} />
+      <div
+        className={`relative w-full aspect-[4/3] border border-ink ${
+          content.starting ? "mb-12" : ""
+        }`}
+      >
+        {imageSrc ? (
+          <Image
+            src={imageSrc}
+            alt={content.shotPlaceholder}
+            fill
+            sizes="(min-width: 768px) 640px, 100vw"
+            className="object-cover"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center px-4 text-center text-xs uppercase tracking-[0.03em] opacity-60">
+            {content.shotPlaceholder}
+          </div>
+        )}
       </div>
 
       {content.starting ? (

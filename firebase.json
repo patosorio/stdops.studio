@@ -2,6 +2,21 @@
   "apphosting": {
     "backendId": "thai-business-website",
     "rootDir": "/",
-    "ignore": ["node_modules", ".git", ".next"]
+    "ignore": [
+      "node_modules",
+      ".git",
+      ".next",
+      ".env",
+      ".env.*",
+      "serviceAccount*.json",
+      "*credentials*.json",
+      "*firebase-adminsdk*.json"
+    ]
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
   }
 }

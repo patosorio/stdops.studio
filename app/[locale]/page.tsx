@@ -1,5 +1,6 @@
 import { loadPage } from "@/lib/i18n/load-page";
 import type { LocaleParams } from "@/lib/i18n/resolve-locale";
+import { AccentDot } from "@/components/accent-dot";
 import { ProofStat } from "@/components/proof-stat";
 import { ServiceRow } from "@/components/service-row";
 import { LineCta } from "@/components/line-cta";
@@ -15,11 +16,7 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
     <section className="px-5 md:px-12 pt-10 md:pt-20 pb-16 max-w-[1400px]">
       <div className="flex gap-3 mb-7">
         {DOT_COLORS.map((color) => (
-          <span
-            key={color}
-            className="w-2 h-2 rounded-full inline-block"
-            style={{ background: color }}
-          />
+          <AccentDot key={color} color={color} />
         ))}
       </div>
 
@@ -69,3 +66,4 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
     </section>
   );
 }
+

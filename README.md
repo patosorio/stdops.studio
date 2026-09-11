@@ -54,6 +54,7 @@ Open [http://localhost:3000](http://localhost:3000). `/` redirects to `/th`.
 | `npm start` | Serve the production build |
 | `npm run lint` | ESLint |
 | `npm run typecheck` | `tsc --noEmit` |
+| `npm run content:sync-images` | Upload about/work/service images to Firebase Storage |
 
 Run lint and typecheck clean before considering a page done.
 
@@ -69,10 +70,15 @@ Variables the site reads today:
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | Search Console HTML-tag content value |
 | `NEXT_PUBLIC_LINE_ADD_FRIEND_URL` | LINE Official Account add-friend link |
 | `NEXT_PUBLIC_MESSENGER_URL` | Messenger fallback link |
+| `NEXT_PUBLIC_FIREBASE_PROJECT_ID` | Firebase project (`stdops-af357`) |
+| `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` | Storage bucket (`stdops-af357.firebasestorage.app`) |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Google Analytics 4 measurement ID (`G-…`) |
+| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | Search Console HTML-tag `content=` value |
+| `NEXT_PUBLIC_LINE_ADD_FRIEND_URL` | LINE Official Account add-friend HTTPS URL |
 
-The rest of `.env.example` (Firebase client keys, Stripe, LINE channel tokens, GA, Meta Pixel) is reserved for later phases. Do not wire those up speculatively.
+About, Work, and service screenshots live in Firebase Storage (`content/**`). URLs are stored in Firestore `content/images`. Run `npm run content:sync-images` with Application Default Credentials to upload. Contact form posts land in Firestore `contactMessages` via `/api/contact` (Admin SDK). The rest of `.env.example` (Firebase client keys, Stripe, LINE channel tokens, Meta Pixel) is reserved for later phases.
 
-On Firebase App Hosting, set `NEXT_PUBLIC_SITE_URL` in `apphosting.yaml`. Secrets go through `firebase apphosting:secrets:set` — never as committed values.
+On Firebase App Hosting, set public env in `apphosting.yaml`.
 
 ## Project layout
 
@@ -104,7 +110,7 @@ This repo is the marketing site. Do not build these here until they are explicit
 - LINE webhook handlers
 - Internal apps (quotation bot, AI flows)
 
-The contact form is structure-only until a backend is wired. Photography slots are placeholders until assets are sourced.
+The contact form writes to Firestore `contactMessages`. Photography slots on Work/About/Services resolve from Storage (local `public/` in dev).
 
 ## Deploy
 

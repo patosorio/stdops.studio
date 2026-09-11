@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { JsonLd } from "@/components/json-ld";
 import { Footer } from "@/components/footer";
+import { GaTag } from "@/components/ga-tag";
+import { JsonLd } from "@/components/json-ld";
 import { Nav } from "@/components/nav";
 import { accentHex } from "@/lib/design/accents";
 import { fontMono, fontThai } from "@/lib/fonts";
@@ -52,11 +53,12 @@ export default async function LocaleLayout({
       className={`${fontMono.variable} ${fontThai.variable}`}
     >
       <body className="min-h-screen min-h-dvh flex flex-col font-mono">
+        <GaTag />
         <JsonLd data={organizationJsonLd(dict.meta.description)} />
         <JsonLd data={websiteJsonLd()} />
         <Nav dict={dict.nav} locale={locale} />
         <main className="flex-1">{children}</main>
-        <Footer dict={dict.footer} />
+        <Footer dict={dict.footer} locale={locale} />
       </body>
     </html>
   );

@@ -1,7 +1,10 @@
 # https://firebase.google.com/docs/app-hosting/configure
 runConfig:
-  minInstances: 0
+  # Keep one warm instance so the first visitor after idle is not a cold start.
+  # App Hosting applies this at the Cloud Run service (run.googleapis.com/minScale).
+  minInstances: 1
   maxInstances: 2
+  concurrency: 80
   cpu: 1
   memoryMiB: 512
 
@@ -9,7 +12,19 @@ env:
   - variable: NEXT_PUBLIC_SITE_URL
     value: https://stdops.studio
     availability: [BUILD, RUNTIME]
-  # NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION — paste the content= value from
-  # Search Console's HTML-tag method, then set it the same way as SITE_URL.
-  # Secrets (Stripe, LINE, GA) via `firebase apphosting:secrets:set <NAME>`,
-  # then reference here with `secret: <NAME>` — never commit real values.
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: stdops-af357
+    availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: stdops-af357.firebasestorage.app
+    availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_GA_MEASUREMENT_ID
+    value: G-1YS57ZNCJX
+    availability: [BUILD, RUNTIME]
+  # Leave LINE / Messenger unset until Patricia pastes HTTPS URLs. Client
+  # fallbacks stay `#line` / `#messenger` via lib/env.ts `safeHttpsUrl` (https-only).
+  #   NEXT_PUBLIC_LINE_ADD_FRIEND_URL      — https://lin.ee/… or https://line.me/R/ti/p/@…
+  #   NEXT_PUBLIC_MESSENGER_URL            — optional Messenger https link
+  #   NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION — Search Console HTML-tag `content=`
+  # Never put a Firebase service-account JSON here. App Hosting uses ADC.
+  # Other secrets: `firebase apphosting:secrets:set <NAME>` then `secret: <NAME>`.

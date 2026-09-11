@@ -21,7 +21,7 @@ export default async function ServicesPage({ params }: { params: LocaleParams })
   return (
     <PageShell>
       <PageTitle>{dict.services.title}</PageTitle>
-      <div className="border-t border-ink grid grid-cols-1 md:grid-cols-[max-content_minmax(0,max-content)_max-content]">
+      <div className="border-t border-ink grid grid-cols-1 md:grid-cols-[max-content_minmax(0,1fr)]">
         {dict.services.items.map((service) => (
           <ServiceIndexRow
             key={`${service.href}-${service.name}`}

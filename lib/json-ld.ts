@@ -1,6 +1,6 @@
 import type { Locale } from "@/lib/i18n/config";
 import type { FaqEntry } from "@/lib/i18n/dictionaries/types";
-import { getSiteUrl } from "@/lib/env";
+import { getLineAddFriendUrl, getMessengerUrl, getSiteUrl } from "@/lib/env";
 import {
   absoluteUrl,
   organizationId,
@@ -9,6 +9,9 @@ import {
   siteCountryName,
   siteFounder,
   siteLegalName,
+  siteLogoHeight,
+  siteLogoUrl,
+  siteLogoWidth,
   siteName,
   websiteId,
 } from "@/lib/site";
@@ -33,8 +36,15 @@ function plainFaqText(text: string): string {
   return text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
 }
 
+function organizationSameAs(): string[] {
+  return [getLineAddFriendUrl(), getMessengerUrl()].filter((href) => href.startsWith("https://"));
+}
+
 export function organizationJsonLd(description: string): JsonLdObject {
   const siteUrl = getSiteUrl();
+  const sameAs = organizationSameAs();
+  const logoUrl = siteLogoUrl(siteUrl);
+
   return {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
@@ -43,6 +53,13 @@ export function organizationJsonLd(description: string): JsonLdObject {
     alternateName: siteName,
     url: siteUrl,
     description,
+    logo: {
+      "@type": "ImageObject",
+      url: logoUrl,
+      width: siteLogoWidth,
+      height: siteLogoHeight,
+    },
+    image: logoUrl,
     founder: {
       "@type": "Person",
       name: siteFounder,
@@ -57,6 +74,14 @@ export function organizationJsonLd(description: string): JsonLdObject {
       name: siteCountryName,
     },
     availableLanguage: ["th", "en", "es"],
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      url: absoluteUrl(siteUrl, "th", "/contact"),
+      availableLanguage: ["th", "en", "es"],
+      areaServed: siteCountryCode,
+    },
+    ...(sameAs.length > 0 ? { sameAs } : {}),
   };
 }
 
@@ -133,7 +158,11 @@ export function articleJsonLd(
   };
 }
 
-export function personJsonLd(locale: Locale, description: string): JsonLdObject {
+export function personJsonLd(
+  locale: Locale,
+  description: string,
+  imageUrl?: string,
+): JsonLdObject {
   const siteUrl = getSiteUrl();
   return {
     "@context": "https://schema.org",
@@ -141,7 +170,7 @@ export function personJsonLd(locale: Locale, description: string): JsonLdObject 
     name: siteFounder,
     description,
     url: absoluteUrl(siteUrl, locale, "/about"),
-    image: `${siteUrl}/about/photo.jpg`,
+    image: imageUrl ?? `${siteUrl}/about/photo.jpg`,
     worksFor: { "@id": organizationId(siteUrl) },
     address: {
       "@type": "PostalAddress",

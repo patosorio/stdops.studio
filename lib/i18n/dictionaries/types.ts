@@ -83,6 +83,18 @@ export interface HowStep {
   color: string;
 }
 
+export interface LegalSection {
+  heading: string;
+  paragraphs: string[];
+}
+
+export interface LegalPageCopy {
+  meta: PageMeta;
+  title: string;
+  updated: string;
+  sections: LegalSection[];
+}
+
 export interface Dictionary {
   meta: PageMeta;
   nav: { items: NavItem[]; lineLabel: string; menuOpen: string; menuClose: string };
@@ -145,6 +157,7 @@ export interface Dictionary {
     langLabel: string;
     languages: string;
     photoPlaceholder: string;
+    photoCaption: string;
   };
   contact: {
     meta: PageMeta;
@@ -154,9 +167,31 @@ export interface Dictionary {
     messengerLabel: string;
     formLabel: string;
     nameLabel: string;
+    emailLabel: string;
     bizLabel: string;
     msgLabel: string;
     sendLabel: string;
+    sendingLabel: string;
+    successTitle: string;
+    successBody: string;
+    errorText: string;
   };
-  footer: { line: string; copyright: string };
+  system: {
+    notFoundTitle: string;
+    notFoundBody: string;
+    homeLabel: string;
+    errorTitle: string;
+    errorBody: string;
+    retryLabel: string;
+    loadingLabel: string;
+  };
+  privacy: LegalPageCopy;
+  terms: LegalPageCopy;
+  footer: {
+    line: string;
+    copyright: string;
+    nap: string;
+    privacyLabel: string;
+    termsLabel: string;
+  };
 }

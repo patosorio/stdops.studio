@@ -5,7 +5,7 @@ export const th: Dictionary = {
   meta: {
     title: "ระบบอัตโนมัติระดับองค์กร ในราคาที่ SME จ่ายได้ | stdops",
     description:
-      "วิศวกรข้อมูล 8 ปี ในองค์กรยุโรป ตอนนี้สร้างระบบอัตโนมัติให้ธุรกิจไทยที่ทำงานผ่าน Google Workspace, LINE และสเปรดชีต",
+      "วิศวกรข้อมูล 8 ปี สร้างระบบให้บริษัทยุโรป ตอนนี้นำมาปรับใช้กับธุรกิจไทยที่ทำงานผ่าน Google Workspace, LINE และสเปรดชีต",
   },
   nav: {
     items: [
@@ -23,24 +23,24 @@ export const th: Dictionary = {
   },
   home: {
     headline: "ระบบอัตโนมัติระดับองค์กร ในราคาที่ SME จ่ายได้",
-    sub: "วิศวกรข้อมูล 8 ปี ในองค์กรยุโรป ตอนนี้สร้างระบบอัตโนมัติให้ธุรกิจไทยที่ทำงานผ่าน Google Workspace, LINE และสเปรดชีต",
-    proofLabel: "พนักงานย้ายข้อมูลสำเร็จ",
-    proofValue: "22,000",
+    sub: "วิศวกรข้อมูล 8 ปี สร้างระบบให้บริษัทยุโรป ตอนนี้นำมาปรับใช้กับธุรกิจไทยที่ทำงานผ่าน Google Workspace, LINE และสเปรดชีต",
+    proofLabel: "ได้ใบเสนอราคาใน",
+    proofValue: "48 H",
     priceLabel: "แพ็กเกจเริ่มต้น",
-    priceValue: "฿25,000",
+    priceValue: "฿20,000",
     lineCta: "แชททาง LINE",
     servicesTitle: "บริการ",
     proofTitle: "ผลงานที่พิสูจน์แล้ว",
     services: [
-      { name: "ระบบอัตโนมัติ Workspace", desc: "Sheets, Forms, Gmail, Drive, Calendar ต่อกันเป็นระบบทำงานจริง", price: "จาก ฿25,000", href: "/services/workspace", color: accents.blue },
-      { name: "เว็บไซต์ธุรกิจ", desc: "เว็บไซต์และเว็บแอปสำหรับธุรกิจไทย", price: "จาก ฿45,000", href: "/services/web", color: accents.yellow },
-      { name: "AI Flows", desc: "LINE agent, ประมวลผลเอกสาร, บอทใบเสนอราคา", price: "จาก ฿50,000", href: "/services/ai", color: accents.red },
-      { name: "Data Flows", desc: "POS, บัญชี, LINE, Shopee/Lazada ในเลเยอร์เดียว", price: "จาก ฿180,000", href: "/services/data", color: accents.green },
+      { name: "ระบบอัตโนมัติ Workspace", desc: "Sheets, Forms, Gmail, Drive, Calendar ต่อกันเป็นระบบทำงานจริง", price: "จาก ฿20,000", href: "/services/workspace", color: accents.blue },
+      { name: "เว็บไซต์ธุรกิจ", desc: "เว็บไซต์และเว็บแอปสำหรับธุรกิจไทย", price: "จาก ฿25,000", href: "/services/web", color: accents.yellow },
+      { name: "AI Flows", desc: "LINE agent, ประมวลผลเอกสาร, บอทใบเสนอราคา", price: "จาก ฿40,000", href: "/services/ai", color: accents.red },
+      { name: "Data Flows", desc: "POS, บัญชี, LINE, Shopee/Lazada ในเลเยอร์เดียว", price: "จาก ฿150,000", href: "/services/data", color: accents.green },
     ],
     proofs: [
       { num: "70%", desc: "ลดเวลาประมวลผลออเดอร์ — บริษัทยาในยุโรป", color: accents.blue },
       { num: "85%", desc: "ลดการกรอกข้อมูลมือ — บริษัทผลิตในยุโรป", color: accents.red },
-      { num: "22K", desc: "พนักงานย้ายข้อมูล HR สู่ BigQuery — เชนซูเปอร์มาร์เก็ตยุโรป", color: accents.green },
+      { num: "1.3M", desc: "ข้อมูลย้อนหลังย้ายสู่ BigQuery — บริษัทค้าปลีกยุโรป", color: accents.green },
     ],
   },
   services: {
@@ -50,19 +50,20 @@ export const th: Dictionary = {
     },
     title: "บริการ",
     allServices: "บริการทั้งหมด",
+    // DRAFT: Thai copy needs a native review pass for tone/register before shipping.
     items: [
-      { name: "ระบบอัตโนมัติ Workspace", desc: "เชื่อม Sheets/Forms/Gmail เข้ากับงานจริงด้วย Apps Script", price: "จาก ฿25,000", href: "/services/workspace", color: accents.blue },
-      { name: "เว็บไซต์", desc: "เว็บไซต์ธุรกิจที่เขียนด้วยโค้ด ไม่ใช่ WordPress", price: "จาก ฿45,000", href: "/services/web", color: accents.yellow },
-      { name: "เว็บแอป", desc: "ระบบจองคิว พอร์ทัลลูกค้า เครื่องมือภายใน", price: "จาก ฿150,000", href: "/services/web", color: accents.yellow },
-      { name: "AI Flows", desc: "เอเจนต์ AI ตอบลูกค้าทาง LINE ประมวลผลเอกสาร", price: "จาก ฿40,000", href: "/services/ai", color: accents.red },
-      { name: "Data Engineering", desc: "BigQuery และแดชบอร์ด Looker Studio", price: "จาก ฿180,000", href: "/services/data", color: accents.green },
-      { name: "Data Flows", desc: "เชื่อม POS บัญชี LINE Shopee/Lazada เข้าด้วยกัน", price: "จาก ฿180,000", href: "/services/data", color: accents.green },
+      { name: "ระบบอัตโนมัติ Workspace", desc: "เชื่อม Sheets/Forms/Gmail/Drive/Calendar เข้ากับงานจริงด้วย Apps Script · รวมการอบรมทีมงาน", price: "จาก ฿20,000", href: "/services/workspace", color: accents.blue },
+      { name: "เว็บไซต์", desc: "เว็บไซต์ธุรกิจที่เขียนด้วยโค้ด ไม่ใช่ WordPress · รองรับไทย/อังกฤษ · โค้ดเป็นของคุณ", price: "จาก ฿25,000", href: "/services/web", color: accents.yellow },
+      { name: "เว็บแอป", desc: "ระบบจองคิว พอร์ทัลลูกค้า เครื่องมือภายใน · Django/FastAPI + Next.js · เสนอราคาหลังคุยรายละเอียด", price: "จาก ฿120,000", href: "/services/web", color: accents.yellow },
+      { name: "AI Flows", desc: "เอเจนต์ AI ตอบลูกค้าทาง LINE ประมวลผลเอกสาร · รวมชุดทดสอบและปรับจูน 30 วัน", price: "จาก ฿40,000", href: "/services/ai", color: accents.red },
+      { name: "Data Engineering", desc: "BigQuery และแดชบอร์ด Looker Studio · ใช้แนวทางเดียวกับการย้ายข้อมูลระดับองค์กร 1.3M รายการ", price: "จาก ฿150,000", href: "/services/data", color: accents.green },
+      { name: "Data Flows", desc: "เชื่อม POS บัญชี LINE Shopee/Lazada เข้าด้วยกัน · แดชบอร์ดเดียวแทนเครื่องมือแยกกันห้าตัว", price: "จาก ฿150,000", href: "/services/data", color: accents.green },
     ],
   },
   serviceWorkspace: {
     meta: {
       title: "ระบบอัตโนมัติ Google Workspace ราคาเท่าไหร่ | stdops",
-      description: "เชื่อม Sheets, Forms, Gmail และ Drive เข้ากับงานจริงด้วย Apps Script และ Python ดูราคา Google Workspace และราคาระบบอัตโนมัติ เริ่มต้น ฿25,000",
+      description: "เชื่อม Sheets, Forms, Gmail และ Drive เข้ากับงานจริงด้วย Apps Script และ Python ดูราคา Google Workspace และราคาระบบอัตโนมัติ เริ่มต้น ฿20,000",
     },
     title: "ระบบอัตโนมัติ Workspace",
     intro: "เชื่อม Sheets, Forms, Gmail, Drive, Calendar เข้ากับงานจริงด้วย Apps Script และ Python — รับออเดอร์จาก LINE เข้า Sheet ออกใบแจ้งหนี้อัตโนมัติ ตารางเวรพนักงาน แจ้งเตือนสต็อก รายงานประจำเดือนที่สร้างเอง",
@@ -80,7 +81,7 @@ export const th: Dictionary = {
     exampleText: "บริษัทยาในยุโรป: ระบบประมวลผลออเดอร์ที่เชื่อม ERP เข้ากับ Sheets และ Gmail",
     exampleNum: "−70%",
     shotPlaceholder: "สกรีนช็อตแดชบอร์ดจริง",
-    starting: { label: "เริ่มต้นที่", price: "฿25,000" },
+    starting: { label: "เริ่มต้นที่", price: "฿20,000" },
     faqLabel: "คำถามที่พบบ่อย",
     faq: [
       {
@@ -89,7 +90,7 @@ export const th: Dictionary = {
       },
       {
         q: "ราคาระบบอัตโนมัติ Workspace ของเรา แยกจากค่า Google เท่าไหร่?",
-        a: "เริ่มต้นที่ ฿25,000 สำหรับ 1 ระบบอัตโนมัติ (เขียนด้วย Apps Script แก้ไข 2 รอบ ซัพพอร์ต 30 วัน) — ดูแพ็กเกจทั้งหมดที่หน้าราคา",
+        a: "เริ่มต้นที่ ฿20,000 สำหรับ 1 ระบบอัตโนมัติ (เขียนด้วย Apps Script แก้ไข 2 รอบ ซัพพอร์ต 30 วัน) — ดูแพ็กเกจทั้งหมดที่หน้าราคา",
       },
       {
         q: "รับเขียน Apps Script ดึงข้อมูลระหว่าง Google Sheet สองไฟล์ให้อัตโนมัติไหม?",
@@ -103,8 +104,8 @@ export const th: Dictionary = {
   },
   serviceWeb: {
     meta: {
-      title: "รับทำเว็บไซต์บริษัท ราคาเริ่มต้น ฿45,000 | stdops",
-      description: "รับทำเว็บไซต์บริษัทด้วยโค้ดจริง ไม่ใช่ WordPress เร็ว รองรับ 2 ภาษา เจ้าของโค้ดเอง เริ่มต้น ฿45,000",
+      title: "รับทำเว็บไซต์บริษัท ราคาเริ่มต้น ฿25,000 | stdops",
+      description: "รับทำเว็บไซต์บริษัทด้วยโค้ดจริง ไม่ใช่ WordPress เร็ว รองรับ 2 ภาษา เจ้าของโค้ดเอง เริ่มต้น ฿25,000",
     },
     title: "เว็บไซต์ & เว็บแอป",
     intro: "เว็บไซต์ธุรกิจที่เขียนด้วยโค้ดจริง ไม่ใช่ WordPress — เร็ว รองรับหลายภาษา เจ้าของโค้ดเอง และเว็บแอปภายใน: ระบบจองคิว พอร์ทัลลูกค้า ERP แบบย่อ",
@@ -112,8 +113,9 @@ export const th: Dictionary = {
     offer: {
       kind: "rows",
       items: [
-        { name: "เว็บไซต์ธุรกิจ", desc: "Next.js · TH/EN · 5-8 หน้า · ติดต่อผ่าน LINE", price: "จาก ฿45,000" },
-        { name: "เว็บแอป / เครื่องมือภายใน", desc: "Django/FastAPI + Next.js · เสนอราคาคงที่หลังคุยความต้องการ", price: "จาก ฿150,000" },
+        // DRAFT: "แผงผู้ดูแลระบบ · analytics" needs a native-speaker pass on phrasing.
+        { name: "เว็บไซต์ธุรกิจ", desc: "Next.js · TH/EN · 5-8 หน้า · แผงผู้ดูแลระบบ · analytics · ติดต่อผ่าน LINE", price: "จาก ฿25,000" },
+        { name: "เว็บแอป / เครื่องมือภายใน", desc: "Django/FastAPI + Next.js · เสนอราคาคงที่หลังคุยความต้องการ", price: "จาก ฿120,000" },
       ],
     },
     exampleLabel: "ตัวอย่างจริง",
@@ -124,7 +126,7 @@ export const th: Dictionary = {
     faq: [
       {
         q: "ทำเว็บไซต์บริษัทเท่าไหร่?",
-        a: "เว็บไซต์ธุรกิจเริ่มต้นที่ ฿45,000 — Next.js รองรับไทย/อังกฤษ 5-8 หน้า เชื่อมต่อ LINE เจ้าของโค้ดเอง 100% ส่วนเว็บแอป (ระบบจองคิว พอร์ทัลลูกค้า) เสนอราคาแยกหลังคุยรายละเอียด เริ่มต้นประมาณ ฿150,000",
+        a: "เว็บไซต์ธุรกิจเริ่มต้นที่ ฿25,000 — Next.js รองรับไทย/อังกฤษ 5-8 หน้า เชื่อมต่อ LINE เจ้าของโค้ดเอง 100% ส่วนเว็บแอป (ระบบจองคิว พอร์ทัลลูกค้า) เสนอราคาแยกหลังคุยรายละเอียด เริ่มต้นประมาณ ฿120,000",
       },
       {
         q: "ทำเว็บพร้อม SEO ไหม?",
@@ -177,7 +179,7 @@ export const th: Dictionary = {
   serviceData: {
     meta: {
       title: "รับทำ Dashboard Looker Studio & Data Pipeline | stdops",
-      description: "รวมข้อมูลจาก POS บัญชี LINE และ Shopee/Lazada เข้า BigQuery พร้อมแดชบอร์ด Looker Studio เริ่มต้น ฿180,000",
+      description: "รวมข้อมูลจาก POS บัญชี LINE และ Shopee/Lazada เข้า BigQuery พร้อมแดชบอร์ด Looker Studio เริ่มต้น ฿150,000",
     },
     title: "Data Engineering & Data Flows",
     intro: "สำหรับธุรกิจที่โตเกินสเปรดชีตแล้ว: ไปป์ไลน์ข้อมูล คลังข้อมูล BigQuery แดชบอร์ด Looker Studio และการเชื่อม POS บัญชี LINE Shopee/Lazada เข้าด้วยกัน",
@@ -185,8 +187,8 @@ export const th: Dictionary = {
     offer: {
       kind: "rows",
       items: [
-        { name: "Data Engineering", desc: "ไปป์ไลน์ + คลังข้อมูล BigQuery + แดชบอร์ด", price: "จาก ฿180,000" },
-        { name: "Data Flows", desc: "เชื่อม POS บัญชี LINE Shopee/Lazada", price: "จาก ฿180,000" },
+        { name: "Data Engineering", desc: "ไปป์ไลน์ + คลังข้อมูล BigQuery + แดชบอร์ด", price: "จาก ฿150,000" },
+        { name: "Data Flows", desc: "เชื่อม POS บัญชี LINE Shopee/Lazada", price: "จาก ฿150,000" },
       ],
     },
     exampleLabel: "ตัวอย่างจริง",
@@ -205,14 +207,14 @@ export const th: Dictionary = {
       },
       {
         q: "ทำ Dashboard Looker Studio ราคาเท่าไหร่?",
-        a: "งาน Data Engineering เริ่มต้นที่ ฿180,000 ครอบคลุมทั้งระบบดึงข้อมูล คลังข้อมูล BigQuery และตัวแดชบอร์ด — คุยฟรี 30 นาทีก่อนได้ใบเสนอราคาแบบตายตัว",
+        a: "งาน Data Engineering เริ่มต้นที่ ฿150,000 ครอบคลุมทั้งระบบดึงข้อมูล คลังข้อมูล BigQuery และตัวแดชบอร์ด — คุยฟรี 30 นาทีก่อนได้ใบเสนอราคาแบบตายตัว",
       },
     ],
   },
   work: {
     meta: {
       title: "ผลงาน | stdops",
-      description: "ผลงานระบบอัตโนมัติและข้อมูลให้กับองค์กรยุโรป — ซูเปอร์มาร์เก็ต บริษัทยา การผลิต ฟินเทค",
+      description: "ผลงานระบบอัตโนมัติและข้อมูลให้กับองค์กรยุโรป — ค้าปลีก บริษัทยา การผลิต ฟินเทค",
     },
     title: "ผลงาน",
     problemLabel: "ปัญหา",
@@ -221,10 +223,10 @@ export const th: Dictionary = {
       {
         id: "case-supermarket",
         color: accents.green,
-        industry: "ซูเปอร์มาร์เก็ตยุโรป",
-        problem: "ข้อมูล HR ของพนักงาน 22,000 คนกระจัดกระจายในระบบเก่า",
+        industry: "บริษัทค้าปลีกยุโรป",
+        problem: "ข้อมูลย้อนหลัง 1.3M รายการกระจัดกระจายในระบบเก่า",
         built: "ย้ายข้อมูลทั้งหมดสู่ BigQuery พร้อมไปป์ไลน์ตรวจสอบคุณภาพข้อมูล",
-        result: "22,000",
+        result: "1.3M รายการ",
         shotLabel: "สกรีนช็อตไปป์ไลน์",
       },
       {
@@ -277,19 +279,23 @@ export const th: Dictionary = {
   pricing: {
     meta: {
       title: "ราคา | stdops",
-      description: "แพ็กเกจคงที่ เริ่มต้น ฿25,000 — คุณภาพระดับองค์กร ในราคา SME",
+      description: "แพ็กเกจคงที่ เริ่มต้น ฿20,000 — คุณภาพระดับองค์กร ในราคา SME",
     },
     title: "ราคา",
-    sub: "ตำแหน่งราคาสูงกว่า Fastwork ต่ำกว่าเอเจนซี่ใหญ่ในกรุงเทพ — คุณภาพระดับองค์กร ในราคา SME",
+    sub: "แพ็กเกจราคาคงที่ ออกแบบมาสำหรับ SME ไทยโดยเฉพาะ — ไม่ใช่ราคาฟรีแลนซ์รายวัน ไม่ใช่ค่าจ้างเอเจนซี่ใหญ่",
     packagesLabel: "แพ็กเกจ",
     packages: [
-      { name: "Workspace Starter", price: "฿25,000", includes: "ระบบอัตโนมัติ 1 อย่าง · Apps Script · แก้ไข 2 ครั้ง · ซัพพอร์ต 30 วัน", color: accents.blue },
-      { name: "Workspace Pro", price: "฿65,000", includes: "ระบบอัตโนมัติ 4 จุด · แดชบอร์ด Looker Studio · อบรมทีม 1 ครั้ง · ซัพพอร์ต 60 วัน", color: accents.blue },
-      { name: "Workspace Ops", price: "จาก ฿120,000", includes: "ระบบปฏิบัติการเต็มรูปแบบ: รับออเดอร์ สต็อก ใบแจ้งหนี้ รายงาน AI ผู้ช่วยบน LINE", color: accents.blue },
-      { name: "Business Website", price: "฿45,000", includes: "Next.js · TH/EN · 5-8 หน้า · ติดต่อผ่าน LINE · เจ้าของโค้ดเอง", color: accents.yellow },
-      { name: "Web App / Internal Tool", price: "จาก ฿150,000", includes: "Django/FastAPI + Next.js · เสนอราคาคงที่หลังคุยความต้องการ", color: accents.yellow },
+      // DRAFT: New Business Lite/Pro copy needs a native-speaker pass before shipping.
+      { name: "New Business Lite", price: "฿40,000", includes: "เว็บไซต์ (5-8 หน้า แผงผู้ดูแลระบบ analytics) · ตั้งค่า LINE OA + ริชเมนู · ระบบอัตโนมัติ 1 จุด · เป็นเจ้าของทุกอย่าง", color: accents.blue },
+      { name: "New Business Pro", price: "฿65,000", includes: "ทุกอย่างใน Lite · ระบบอัตโนมัติสูงสุด 4 จุด · เพจ Facebook พร้อมเทมเพลตแบรนด์ · ตั้งค่าบัญชีธุรกิจ Instagram", color: accents.blue },
+      { name: "Workspace Starter", price: "฿20,000", includes: "ระบบอัตโนมัติ 1 อย่าง · Apps Script · แก้ไข 2 ครั้ง · ซัพพอร์ต 30 วัน", color: accents.blue },
+      { name: "Workspace Pro", price: "฿35,000", includes: "ระบบอัตโนมัติ 4 จุด · แดชบอร์ด Looker Studio · อบรมทีม 1 ครั้ง · ซัพพอร์ต 60 วัน", color: accents.blue },
+      { name: "Workspace Ops", price: "จาก ฿90,000", includes: "ระบบปฏิบัติการเต็มรูปแบบ: รับออเดอร์ สต็อก ใบแจ้งหนี้ รายงาน AI ผู้ช่วยบน LINE", color: accents.blue },
+      // DRAFT: "แผงผู้ดูแลระบบ · analytics" needs a native-speaker pass on phrasing.
+      { name: "Business Website", price: "฿25,000", includes: "Next.js · TH/EN · 5-8 หน้า · แผงผู้ดูแลระบบ · analytics · ติดต่อผ่าน LINE · เจ้าของโค้ดเอง", color: accents.yellow },
+      { name: "Web App / Internal Tool", price: "จาก ฿120,000", includes: "Django/FastAPI + Next.js · เสนอราคาคงที่หลังคุยความต้องการ", color: accents.yellow },
       { name: "AI Flow", price: "จาก ฿40,000", includes: "เอเจนต์ 1 ตัว (LINE / เอกสาร / ใบเสนอราคา) รวม eval set และปรับจูน 30 วัน", color: accents.red },
-      { name: "Data Platform", price: "จาก ฿180,000", includes: "BigQuery + ไปป์ไลน์ + แดชบอร์ด", color: accents.green },
+      { name: "Data Platform", price: "จาก ฿150,000", includes: "BigQuery + ไปป์ไลน์ + แดชบอร์ด", color: accents.green },
     ],
     retainerLabel: "สัญญารายเดือน",
     retainers: [
@@ -319,14 +325,15 @@ export const th: Dictionary = {
   about: {
     meta: {
       title: "เกี่ยวกับ Patricia | stdops",
-      description: "วิศวกรข้อมูลและนักพัฒนา full-stack ประจำกรุงเทพฯ มีประสบการณ์ 8 ปีกว่าในการสร้างระบบให้องค์กรยุโรป",
+      description: "วิศวกรข้อมูลและนักพัฒนา full-stack ประจำกรุงเทพฯ มีประสบการณ์ 8 ปีกว่าในการสร้างระบบให้บริษัทยุโรป",
     },
     title: "เกี่ยวกับ Patricia",
-    p1: "วิศวกรข้อมูลและนักพัฒนา full-stack ประจำกรุงเทพฯ มีประสบการณ์ 8 ปีกว่าในการสร้างระบบให้องค์กรยุโรป",
-    p2: "ตอนนี้นำความเข้มงวดระดับองค์กรมาสู่ธุรกิจ SME ไทยที่ทำงานผ่าน Google Workspace, LINE และสเปรดชีต — เขียนด้วย Python, Django, FastAPI, Next.js, Google Cloud และ Gemini/Claude APIs",
+    p1: "วิศวกรข้อมูลและนักพัฒนา full-stack ประจำกรุงเทพฯ มีประสบการณ์ 8 ปีกว่าในการสร้างระบบให้บริษัทยุโรป",
+    p2: "ตอนนี้นำมาตรฐานการทำงานแบบเดียวกันมาใช้กับธุรกิจ SME ไทยที่ทำงานผ่าน Google Workspace, LINE และสเปรดชีต — เขียนด้วย Python, Django, FastAPI, Next.js, Google Cloud และ Gemini/Claude APIs",
     langLabel: "ภาษา",
     languages: "สเปน · กาตาลัน · อังกฤษ · กำลังเรียนภาษาไทย",
-    photoPlaceholder: "มือถือดอกกุหลาบ"
+    photoPlaceholder: "มือถือดอกกุหลาบ",
+    photoCaption: "กุหลาบจากสวนของฉัน",
   },
   contact: {
     meta: {
@@ -339,9 +346,125 @@ export const th: Dictionary = {
     messengerLabel: "ส่งข้อความทาง Messenger",
     formLabel: "หรือส่งฟอร์ม",
     nameLabel: "ชื่อ",
+    emailLabel: "อีเมล",
     bizLabel: "ประเภทธุรกิจ",
     msgLabel: "คุณอยากทำอะไรเป็นอัตโนมัติ?",
     sendLabel: "ส่ง",
+    sendingLabel: "กำลังส่ง",
+    successTitle: "รับข้อความแล้ว",
+    successBody: "แชททาง LINE สั้นๆ เพื่อให้จับคู่กับข้อความนี้ได้",
+    errorText: "ส่งไม่สำเร็จ ลองแชททาง LINE หรือส่งอีกครั้ง",
   },
-  footer: { line: "แชททาง LINE", copyright: `© ${new Date().getFullYear()} standard operations studio` },
+  system: {
+    notFoundTitle: "ไม่พบหน้านี้",
+    notFoundBody: "ไม่มี URL นี้บนเว็บไซต์ ดูบริการ ผลงาน และราคาได้จากเมนู",
+    homeLabel: "กลับหน้าแรก",
+    errorTitle: "มีข้อผิดพลาด",
+    errorBody: "ลองอีกครั้ง ถ้ายังไม่ได้ แชททาง LINE",
+    retryLabel: "ลองอีกครั้ง",
+    loadingLabel: "กำลังโหลด",
+  },
+  privacy: {
+    meta: {
+      title: "นโยบายความเป็นส่วนตัว | stdops",
+      description:
+        "stdops เก็บและใช้ข้อมูลจากฟอร์มติดต่อและ Google Analytics อย่างไร ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล",
+    },
+    title: "นโยบายความเป็นส่วนตัว",
+    updated: "อัปเดต 11 กันยายน 2569",
+    sections: [
+      {
+        heading: "ผู้ควบคุมข้อมูล",
+        paragraphs: [
+          "Patricia Osorio ดำเนินงานในนาม standard operations studio (stdops) กรุงเทพฯ ประเทศไทย เป็นผู้ควบคุมข้อมูลส่วนบุคคลบนเว็บไซต์ stdops.studio",
+        ],
+      },
+      {
+        heading: "ข้อมูลที่เก็บ",
+        paragraphs: [
+          "ฟอร์มติดต่อ: ชื่อ อีเมล ชื่อกิจการ ข้อความ และภาษาของหน้า บันทึกใน Firestore ผ่านเซิร์ฟเวอร์ของเรา เบราว์เซอร์ของคุณอ่านหรือเขียนคอลเลกชันนี้ไม่ได้ เราใช้หมายเลข IP ชั่วคราวในหน่วยความจำเพื่อจำกัดสแปม และไม่บันทึก IP คู่กับข้อความ",
+          "Google Analytics 4: หน้าที่มีผู้เข้าชม ชนิดอุปกรณ์/เบราว์เซอร์ ตำแหน่งโดยประมาณ และตัวระบุคุกกี้ ประมวลผลโดย Google",
+          "LINE: ถ้าคุณแชทกับบัญชีทางการ ข้อมูลแชทอยู่ภายนโยบายของ LINE เราอ่านเฉพาะข้อความที่คุณส่งมาหาเรา",
+        ],
+      },
+      {
+        heading: "วัตถุประสงค์",
+        paragraphs: [
+          "ใช้ข้อมูลเพื่อตอบคำถาม จัดทำใบเสนอราคา ดูแลเว็บไซต์ และดูสถิติการใช้งาน ไม่ขายข้อมูลส่วนบุคคล",
+        ],
+      },
+      {
+        heading: "ฐานทางกฎหมาย",
+        paragraphs: [
+          "ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562: ความยินยอมเมื่อคุณกดส่งฟอร์ม และขั้นตอนก่อนทำสัญญาเมื่อคุณขอใบเสนอราคา",
+        ],
+      },
+      {
+        heading: "การเก็บรักษาและการเปิดเผย",
+        paragraphs: [
+          "ข้อความติดต่อเก็บไว้จนกว่าเรื่องจะจบ หรือจนกว่าคุณจะขอให้ลบ Google Analytics เก็บตามการตั้งค่าของ Google",
+          "เปิดเผยให้ Google (Firebase และ Analytics) เท่าที่จำเป็นเพื่อให้เว็บทำงาน เซิร์ฟเวอร์ของ Google อาจอยู่นอกประเทศไทย",
+        ],
+      },
+      {
+        heading: "สิทธิของคุณ",
+        paragraphs: [
+          "คุณมีสิทธิเข้าถึง แก้ไข ลบข้อมูล ถอนความยินยอม และร้องเรียนต่อคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล ใช้หน้าติดต่อหรือ LINE เพื่อใช้สิทธิ",
+        ],
+      },
+      {
+        heading: "คุกกี้",
+        paragraphs: [
+          "GA4 ใช้คุกกี้เพื่อวัดผล ขณะนี้เว็บไซต์ยังไม่มีแถบยินยอมคุกกี้ การเข้าชมหน้าที่มีสคริปต์วัดผลถือว่าคุณรับทราบการใช้คุกกี้นี้",
+        ],
+      },
+    ],
+  },
+  terms: {
+    meta: {
+      title: "ข้อกำหนดการใช้บริการ | stdops",
+      description: "ข้อกำหนดสั้นๆ สำหรับงานอัตโนมัติ เว็บไซต์ และข้อมูลของ stdops ในประเทศไทย",
+    },
+    title: "ข้อกำหนดการใช้บริการ",
+    updated: "อัปเดต 11 กันยายน 2569",
+    sections: [
+      {
+        heading: "บริการ",
+        paragraphs: [
+          "stdops รับทำงานอัตโนมัติ เว็บไซต์ เวิร์กโฟลว์ AI และข้อมูลให้ธุรกิจในประเทศไทย ตัวเลขบนเว็บเป็นราคาเริ่มต้น ใบเสนอราคาเป็นลายลักษณ์อักษรเป็นข้อตกลงของแต่ละงาน",
+        ],
+      },
+      {
+        heading: "งานที่ส่งมอบ",
+        paragraphs: [
+          "ขอบเขต กำหนดส่ง และความเป็นเจ้าของงานเป็นไปตามใบเสนอราคาที่ทั้งสองฝ่ายยอมรับ",
+        ],
+      },
+      {
+        heading: "เนื้อหาบนเว็บ",
+        paragraphs: [
+          "ข้อความ ตัวอย่าง และตัวเลขผลงานบนเว็บเป็นข้อมูล ไม่ใช่การรับประกันผลทางธุรกิจเฉพาะเจาะจงของงานของคุณ",
+        ],
+      },
+      {
+        heading: "การใช้เว็บไซต์",
+        paragraphs: [
+          "ห้ามส่งสแปม ห้ามใช้ฟอร์มติดต่อในทางที่ผิด และห้ามพยายามเข้าถึงระบบที่ไม่ได้ให้สิทธิ์ไว้",
+        ],
+      },
+      {
+        heading: "กฎหมาย",
+        paragraphs: [
+          "ใช้กฎหมายไทย ข้อพิพาทให้พิจารณาที่กรุงเทพฯ ติดต่อผ่านหน้าติดต่อหรือ LINE",
+        ],
+      },
+    ],
+  },
+  footer: {
+    line: "แชททาง LINE",
+    copyright: `© ${new Date().getFullYear()} standard operations studio`,
+    nap: "กรุงเทพฯ ประเทศไทย",
+    privacyLabel: "ความเป็นส่วนตัว",
+    termsLabel: "ข้อกำหนด",
+  },
 };

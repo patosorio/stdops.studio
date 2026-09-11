@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { loadPage } from "@/lib/i18n/load-page";
 import type { LocaleParams } from "@/lib/i18n/resolve-locale";
 import { pageMetadata } from "@/lib/seo";
+import { loadContentImages, workImageSrc } from "@/lib/content/load-images";
 import { PageShell } from "@/components/page-shell";
 import { PageTitle } from "@/components/page-title";
 import { WorkCase } from "@/components/work-case";
@@ -17,6 +18,7 @@ export async function generateMetadata({
 
 export default async function WorkPage({ params }: { params: LocaleParams }) {
   const { dict, bodyFont } = await loadPage(params);
+  const images = await loadContentImages();
 
   return (
     <PageShell width="copy">
@@ -30,6 +32,7 @@ export default async function WorkPage({ params }: { params: LocaleParams }) {
             problemLabel={dict.work.problemLabel}
             builtLabel={dict.work.builtLabel}
             bodyFont={bodyFont}
+            imageSrc={workImageSrc(images, entry.id)}
           />
         ))}
       </div>

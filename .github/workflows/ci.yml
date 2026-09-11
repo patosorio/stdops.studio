@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_SITE_URL: https://stdops.studio
+      NEXT_PUBLIC_FIREBASE_PROJECT_ID: stdops-af357
+      NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: stdops-af357.firebasestorage.app
+      NEXT_PUBLIC_GA_MEASUREMENT_ID: G-1YS57ZNCJX
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run build

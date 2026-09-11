@@ -7,11 +7,13 @@ export function WorkCase({
   problemLabel,
   builtLabel,
   bodyFont,
+  imageSrc,
 }: {
   entry: Dictionary["work"]["cases"][number];
   problemLabel: string;
   builtLabel: string;
   bodyFont: string;
+  imageSrc: string | undefined;
 }) {
   return (
     <article className="grid grid-cols-1 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] gap-10 py-10 border-b border-ink items-start">
@@ -32,13 +34,19 @@ export function WorkCase({
         </div>
       </div>
       <div className="relative w-full aspect-[4/3] border border-ink">
-        <Image
-          src={`/work/${entry.id}.png`}
-          alt={entry.shotLabel}
-          fill
-          sizes="(min-width: 768px) 50vw, 100vw"
-          className="object-cover"
-        />
+        {imageSrc ? (
+          <Image
+            src={imageSrc}
+            alt={entry.shotLabel}
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="object-cover"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center px-4 text-center text-xs uppercase tracking-[0.03em] opacity-60">
+            {entry.shotLabel}
+          </div>
+        )}
       </div>
     </article>
   );

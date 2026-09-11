@@ -7,7 +7,14 @@ export function middleware(request: NextRequest) {
   const hasLocale = locales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
   );
-  if (hasLocale) return NextResponse.next();
+  if (hasLocale) {
+    const locale = pathname.split("/").filter(Boolean)[0] ?? defaultLocale;
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set("x-locale", locale);
+    return NextResponse.next({
+      request: { headers: requestHeaders },
+    });
+  }
 
   // Thai-first: unprefixed paths always resolve to /th, never browser-language sniffed.
   const url = request.nextUrl.clone();

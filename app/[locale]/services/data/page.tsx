@@ -3,6 +3,7 @@ import { loadPage } from "@/lib/i18n/load-page";
 import type { LocaleParams } from "@/lib/i18n/resolve-locale";
 import { pageMetadata } from "@/lib/seo";
 import { accents } from "@/lib/design/accents";
+import { loadContentImages, serviceImageSrc } from "@/lib/content/load-images";
 import { ServiceDetail } from "@/components/service-detail";
 
 export async function generateMetadata({
@@ -15,7 +16,10 @@ export async function generateMetadata({
 }
 
 export default async function DataServicePage({ params }: { params: LocaleParams }) {
-  const { locale, dict, bodyFont } = await loadPage(params);
+  const [{ locale, dict, bodyFont }, images] = await Promise.all([
+    loadPage(params),
+    loadContentImages(),
+  ]);
   return (
     <ServiceDetail
       content={dict.serviceData}
@@ -24,6 +28,7 @@ export default async function DataServicePage({ params }: { params: LocaleParams
       locale={locale}
       path="/services/data"
       backLabel={dict.services.allServices}
+      imageSrc={serviceImageSrc(images, "data")}
     />
   );
 }

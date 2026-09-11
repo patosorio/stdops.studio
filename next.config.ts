@@ -29,10 +29,25 @@ function contentSecurityPolicy(): string {
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  serverExternalPackages: ["firebase-admin"],
   images: {
-    // Add real remote patterns once photography is sourced.
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "firebasestorage.googleapis.com",
+        pathname: "/v0/b/**",
+      },
+      {
+        protocol: "https",
+        hostname: "stdops-af357.firebasestorage.app",
+      },
+      {
+        protocol: "https",
+        hostname: "storage.googleapis.com",
+      },
+    ],
     formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 86400,
   },
   async headers() {
     return [

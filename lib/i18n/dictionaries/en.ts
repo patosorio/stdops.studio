@@ -5,7 +5,7 @@ export const en: Dictionary = {
   meta: {
     title: "Enterprise-grade automation, priced for your business | stdops",
     description:
-      "8+ years shipping production systems for European enterprises — now bringing that rigour to Thai SMBs running on Google Workspace, LINE and spreadsheets.",
+      "8+ years shipping production systems for European companies — now applied to Thai SMBs running on Google Workspace, LINE and spreadsheets.",
   },
   nav: {
     items: [
@@ -23,24 +23,24 @@ export const en: Dictionary = {
   },
   home: {
     headline: "Enterprise-grade automation, priced for your business.",
-    sub: "8+ years shipping production systems for European enterprises — now bringing that rigour to Thai SMBs running on Google Workspace, LINE and spreadsheets.",
-    proofLabel: "employees migrated",
-    proofValue: "22,000",
+    sub: "8+ years shipping production systems for European companies — now applied to Thai SMBs running on Google Workspace, LINE and spreadsheets.",
+    proofLabel: "get a quote in",
+    proofValue: "48 H",
     priceLabel: "starting package",
-    priceValue: "฿25,000",
+    priceValue: "฿20,000",
     lineCta: "Chat on LINE",
     servicesTitle: "Services",
     proofTitle: "Proven results",
     services: [
-      { name: "Workspace Automation", desc: "Sheets, Forms, Gmail, Drive, Calendar wired into real workflows", price: "From ฿25,000", href: "/services/workspace", color: accents.blue },
-      { name: "Business Website", desc: "Websites and web apps for Thai businesses", price: "From ฿45,000", href: "/services/web", color: accents.yellow },
-      { name: "AI Flows", desc: "LINE agents, document processing, quotation bots", price: "From ฿50,000", href: "/services/ai", color: accents.red },
-      { name: "Data Flows", desc: "POS, accounting, LINE, Shopee/Lazada in one layer", price: "From ฿180,000", href: "/services/data", color: accents.green },
+      { name: "Workspace Automation", desc: "Sheets, Forms, Gmail, Drive, Calendar wired into real workflows", price: "From ฿20,000", href: "/services/workspace", color: accents.blue },
+      { name: "Business Website", desc: "Websites and web apps for Thai businesses", price: "From ฿25,000", href: "/services/web", color: accents.yellow },
+      { name: "AI Flows", desc: "LINE agents, document processing, quotation bots", price: "From ฿40,000", href: "/services/ai", color: accents.red },
+      { name: "Data Flows", desc: "POS, accounting, LINE, Shopee/Lazada in one layer", price: "From ฿150,000", href: "/services/data", color: accents.green },
     ],
     proofs: [
       { num: "70%", desc: "Faster order processing — European pharmaceutical company", color: accents.blue },
       { num: "85%", desc: "Less manual data entry — European manufacturing company", color: accents.red },
-      { num: "22K", desc: "HR records migrated to BigQuery — European supermarket chain", color: accents.green },
+      { num: "1.3M", desc: "Historical data records migrated to BigQuery — European retail company", color: accents.green },
     ],
   },
   services: {
@@ -51,18 +51,18 @@ export const en: Dictionary = {
     title: "Services",
     allServices: "All services",
     items: [
-      { name: "Workspace Automation", desc: "Sheets/Forms/Gmail wired into real workflows", price: "From ฿25,000", href: "/services/workspace", color: accents.blue },
-      { name: "Web Development", desc: "Business sites built as code, not WordPress", price: "From ฿45,000", href: "/services/web", color: accents.yellow },
-      { name: "Web Apps", desc: "Booking systems, client portals, internal tools", price: "From ฿150,000", href: "/services/web", color: accents.yellow },
-      { name: "AI Flows", desc: "Gemini/Claude agents on LINE, document processing", price: "From ฿40,000", href: "/services/ai", color: accents.red },
-      { name: "Data Engineering", desc: "Pipelines, BigQuery warehouses, Looker dashboards", price: "From ฿180,000", href: "/services/data", color: accents.green },
-      { name: "Data Flows", desc: "POS, accounting, LINE, Shopee/Lazada in one layer", price: "From ฿180,000", href: "/services/data", color: accents.green },
+      { name: "Workspace Automation", desc: "Sheets, Forms, Gmail, Drive, Calendar wired into real workflows · built with Apps Script · staff training included", price: "From ฿20,000", href: "/services/workspace", color: accents.blue },
+      { name: "Web Development", desc: "Business sites built as code, not WordPress · bilingual TH/EN · you own the code", price: "From ฿25,000", href: "/services/web", color: accents.yellow },
+      { name: "Web Apps", desc: "Booking systems, client portals, internal tools · Django/FastAPI + Next.js · fixed quote after a discovery call", price: "From ฿120,000", href: "/services/web", color: accents.yellow },
+      { name: "AI Flows", desc: "Gemini/Claude agents on LINE, document processing, quotation bots · evaluation set + 30 days tuning included", price: "From ฿40,000", href: "/services/ai", color: accents.red },
+      { name: "Data Engineering", desc: "Pipelines, BigQuery warehouses, Looker Studio dashboards · built on the same patterns used for 1.3M-record enterprise migrations", price: "From ฿150,000", href: "/services/data", color: accents.green },
+      { name: "Data Flows", desc: "POS, accounting, LINE, Shopee/Lazada wired into one layer · one dashboard instead of five disconnected tools", price: "From ฿150,000", href: "/services/data", color: accents.green },
     ],
   },
   serviceWorkspace: {
     meta: {
       title: "Google Workspace Automation & Pricing | stdops",
-      description: "Sheets, Forms, Gmail and Drive wired into real workflows with Apps Script and Python. See Google Workspace license pricing and our automation pricing — from ฿25,000.",
+      description: "Sheets, Forms, Gmail and Drive wired into real workflows with Apps Script and Python. See Google Workspace license pricing and our automation pricing — from ฿20,000.",
     },
     title: "Workspace Automation",
     intro: "Sheets, Forms, Gmail, Drive and Calendar wired into real workflows with Apps Script and Python — LINE orders into Sheets with auto-invoicing, staff scheduling, inventory alerts, reports that build themselves.",
@@ -80,7 +80,7 @@ export const en: Dictionary = {
     exampleText: "European pharmaceutical company: order-processing system linking ERP to Sheets and Gmail",
     exampleNum: "−70%",
     shotPlaceholder: "Real dashboard screenshot",
-    starting: { label: "Starting at", price: "฿25,000" },
+    starting: { label: "Starting at", price: "฿20,000" },
     faqLabel: "FAQ",
     faq: [
       {
@@ -89,7 +89,7 @@ export const en: Dictionary = {
       },
       {
         q: "What does your Workspace automation cost, separately from the Google licence?",
-        a: "Automation projects start at ฿25,000 for one workflow (Apps Script, 2 revision rounds, 30 days support) — see the Pricing page for the full tier breakdown.",
+        a: "Automation projects start at ฿20,000 for one workflow (Apps Script, 2 revision rounds, 30 days support) — see the Pricing page for the full tier breakdown.",
       },
       {
         q: "Can you write a Google Apps Script that pulls data between two Google Sheets automatically?",
@@ -104,7 +104,7 @@ export const en: Dictionary = {
   serviceWeb: {
     meta: {
       title: "Corporate Website Development Thailand | stdops",
-      description: "Company websites built as code, not WordPress — fast, bilingual (TH/EN), you own the code. Fixed pricing from ฿45,000.",
+      description: "Company websites built as code, not WordPress — fast, bilingual (TH/EN), you own the code. Fixed pricing from ฿25,000.",
     },
     title: "Web Development & Apps",
     intro: "Business websites built as code, not WordPress — fast, multilingual, client-owned. Plus internal web apps: booking systems, client portals, ERP-lite.",
@@ -112,8 +112,8 @@ export const en: Dictionary = {
     offer: {
       kind: "rows",
       items: [
-        { name: "Business website", desc: "Next.js · TH/EN · 5-8 pages · LINE contact", price: "From ฿45,000" },
-        { name: "Web app / internal tool", desc: "Django/FastAPI + Next.js · fixed quote after discovery call", price: "From ฿150,000" },
+        { name: "Business website", desc: "Next.js · TH/EN · 5-8 pages · admin panel · analytics · LINE contact", price: "From ฿25,000" },
+        { name: "Web app / internal tool", desc: "Django/FastAPI + Next.js · fixed quote after discovery call", price: "From ฿120,000" },
       ],
     },
     exampleLabel: "Real example",
@@ -124,7 +124,7 @@ export const en: Dictionary = {
     faq: [
       {
         q: "How much does a corporate website cost?",
-        a: "Business websites start from ฿45,000 — Next.js, TH/EN, 5–8 pages, LINE contact integration, and you own the code outright. Web apps (booking systems, client portals) are quoted separately after a discovery call, starting around ฿150,000.",
+        a: "Business websites start from ฿25,000 — Next.js, TH/EN, 5–8 pages, LINE contact integration, and you own the code outright. Web apps (booking systems, client portals) are quoted separately after a discovery call, starting around ฿120,000.",
       },
       {
         q: "Do you build the website with SEO included?",
@@ -177,7 +177,7 @@ export const en: Dictionary = {
   serviceData: {
     meta: {
       title: "Looker Studio Dashboards & Data Pipelines | stdops",
-      description: "BigQuery pipelines and Looker Studio dashboards that pull POS, accounting, LINE and Shopee/Lazada into one view. Fixed pricing from ฿180,000.",
+      description: "BigQuery pipelines and Looker Studio dashboards that pull POS, accounting, LINE and Shopee/Lazada into one view. Fixed pricing from ฿150,000.",
     },
     title: "Data Engineering & Data Flows",
     intro: "For businesses that have outgrown spreadsheets: data pipelines, BigQuery warehouses, Looker Studio dashboards, and connecting POS, accounting, LINE, Shopee/Lazada into one reporting layer.",
@@ -185,8 +185,8 @@ export const en: Dictionary = {
     offer: {
       kind: "rows",
       items: [
-        { name: "Data Engineering", desc: "Pipelines + BigQuery warehouse + dashboards", price: "From ฿180,000" },
-        { name: "Data Flows", desc: "Connect POS, accounting, LINE, Shopee/Lazada", price: "From ฿180,000" },
+        { name: "Data Engineering", desc: "Pipelines + BigQuery warehouse + dashboards", price: "From ฿150,000" },
+        { name: "Data Flows", desc: "Connect POS, accounting, LINE, Shopee/Lazada", price: "From ฿150,000" },
       ],
     },
     exampleLabel: "Real example",
@@ -205,14 +205,14 @@ export const en: Dictionary = {
       },
       {
         q: "How much does a Looker Studio dashboard cost?",
-        a: "Data Engineering projects start from ฿180,000, covering the pipeline, the BigQuery warehouse, and the dashboard itself — get a fixed quote after a free 30-minute call.",
+        a: "Data Engineering projects start from ฿150,000, covering the pipeline, the BigQuery warehouse, and the dashboard itself — get a fixed quote after a free 30-minute call.",
       },
     ],
   },
   work: {
     meta: {
       title: "Work | stdops",
-      description: "Automation and data systems shipped for European enterprises — supermarket, pharma, manufacturing, fintech.",
+      description: "Automation and data systems shipped for European enterprises — retail, pharma, manufacturing, fintech.",
     },
     title: "Work",
     problemLabel: "Problem",
@@ -221,10 +221,10 @@ export const en: Dictionary = {
       {
         id: "case-supermarket",
         color: accents.green,
-        industry: "European supermarket chain",
-        problem: "HR data for 22,000 employees scattered across legacy systems",
+        industry: "European retail company",
+        problem: "1.3M historical data records scattered across legacy systems",
         built: "Migrated all records to BigQuery with data-quality pipelines",
-        result: "22,000",
+        result: "1.3M records",
         shotLabel: "Pipeline screenshot",
       },
       {
@@ -277,19 +277,21 @@ export const en: Dictionary = {
   pricing: {
     meta: {
       title: "Pricing | stdops",
-      description: "Fixed packages from ฿25,000 — enterprise quality at SMB prices.",
+      description: "Fixed packages from ฿20,000 — enterprise quality at SMB prices.",
     },
     title: "Pricing",
-    sub: "Positioned above Fastwork freelancers, below Bangkok agencies — enterprise quality at SMB prices.",
+    sub: "Fixed-price packages built for Thai SMBs — not freelancer day-rates, not big-agency retainers.",
     packagesLabel: "Packages",
     packages: [
-      { name: "Workspace Starter", price: "฿25,000", includes: "One automation · Apps Script · 2 revisions · 30 days support", color: accents.blue },
-      { name: "Workspace Pro", price: "฿65,000", includes: "Up to 4 automations · Looker Studio dashboard · staff training · 60 days support", color: accents.blue },
-      { name: "Workspace Ops", price: "From ฿120,000", includes: "Full operations layer: intake, inventory, invoicing, reporting, AI on LINE", color: accents.blue },
-      { name: "Business Website", price: "฿45,000", includes: "Next.js · TH/EN · 5-8 pages · LINE contact · client owns the code", color: accents.yellow },
-      { name: "Web App / Internal Tool", price: "From ฿150,000", includes: "Django/FastAPI + Next.js · fixed quote after discovery call", color: accents.yellow },
+      { name: "New Business Lite", price: "฿40,000", includes: "Website (5-8 pages, admin panel, analytics) · LINE OA setup + rich menu · one Workspace automation · you own everything", color: accents.blue },
+      { name: "New Business Pro", price: "฿65,000", includes: "Everything in Lite · up to 4 Workspace automations · Facebook Page + branded templates · Instagram business setup", color: accents.blue },
+      { name: "Workspace Starter", price: "฿20,000", includes: "One automation · Apps Script · 2 revisions · 30 days support", color: accents.blue },
+      { name: "Workspace Pro", price: "฿35,000", includes: "Up to 4 automations · Looker Studio dashboard · staff training · 60 days support", color: accents.blue },
+      { name: "Workspace Ops", price: "From ฿90,000", includes: "Full operations layer: intake, inventory, invoicing, reporting, AI on LINE", color: accents.blue },
+      { name: "Business Website", price: "฿25,000", includes: "Next.js · TH/EN · 5-8 pages · admin panel · analytics · LINE contact · client owns the code", color: accents.yellow },
+      { name: "Web App / Internal Tool", price: "From ฿120,000", includes: "Django/FastAPI + Next.js · fixed quote after discovery call", color: accents.yellow },
       { name: "AI Flow", price: "From ฿40,000", includes: "One agent (LINE / documents / quotes) incl. eval set + 30 days tuning", color: accents.red },
-      { name: "Data Platform", price: "From ฿180,000", includes: "BigQuery + pipelines + dashboards", color: accents.green },
+      { name: "Data Platform", price: "From ฿150,000", includes: "BigQuery + pipelines + dashboards", color: accents.green },
     ],
     retainerLabel: "Retainers",
     retainers: [
@@ -319,14 +321,15 @@ export const en: Dictionary = {
   about: {
     meta: {
       title: "About Patricia | stdops",
-      description: "Data engineer and full-stack developer based in Bangkok. 8+ years shipping production systems for European enterprises.",
+      description: "Data engineer and full-stack developer based in Bangkok. 8+ years shipping production systems for European companies.",
     },
     title: "About Patricia",
-    p1: "Data engineer and full-stack developer based in Bangkok. 8+ years shipping production systems for European enterprises.",
-    p2: "Now bringing that enterprise rigour to Thai SMBs running on Google Workspace, LINE and spreadsheets — building with Python, Django, FastAPI, Next.js, Google Cloud, and Gemini/Claude APIs.",
+    p1: "Data engineer and full-stack developer based in Bangkok. 8+ years shipping production systems for European companies.",
+    p2: "Now applying the same engineering standards to Thai SMBs running on Google Workspace, LINE and spreadsheets — building with Python, Django, FastAPI, Next.js, Google Cloud, and Gemini/Claude APIs.",
     langLabel: "Languages",
     languages: "Spanish · Catalan · English · learning Thai",
     photoPlaceholder: "Hand holding a rose",
+    photoCaption: "Rose from my garden",
   },
   contact: {
     meta: {
@@ -339,9 +342,125 @@ export const en: Dictionary = {
     messengerLabel: "Message on Messenger",
     formLabel: "Or send a message",
     nameLabel: "Name",
+    emailLabel: "Email",
     bizLabel: "Business type",
     msgLabel: "What do you want to automate?",
     sendLabel: "Send",
+    sendingLabel: "Sending",
+    successTitle: "Received",
+    successBody: "Chat on LINE with a short note so I can match it to this message.",
+    errorText: "Could not send. Try LINE, or send again.",
   },
-  footer: { line: "Chat on LINE", copyright: `© ${new Date().getFullYear()} standard operations studio` },
+  system: {
+    notFoundTitle: "Page not found",
+    notFoundBody: "That URL is not on this site. Services, work, and pricing are in the menu.",
+    homeLabel: "Back to home",
+    errorTitle: "Something went wrong",
+    errorBody: "Try again. If it keeps happening, chat on LINE.",
+    retryLabel: "Try again",
+    loadingLabel: "Loading",
+  },
+  privacy: {
+    meta: {
+      title: "Privacy policy | stdops",
+      description:
+        "How stdops collects and uses contact-form and Google Analytics data under Thailand’s PDPA.",
+    },
+    title: "Privacy policy",
+    updated: "Updated 11 September 2026",
+    sections: [
+      {
+        heading: "Controller",
+        paragraphs: [
+          "Patricia Osorio, trading as standard operations studio (stdops), Bangkok, Thailand, is the controller of personal data on stdops.studio.",
+        ],
+      },
+      {
+        heading: "What we collect",
+        paragraphs: [
+          "Contact form: name, email, business, message, and page locale. Stored in Firestore through our server. Your browser cannot read or write that collection. We use your IP in memory only to rate-limit spam; we do not save the IP with the message.",
+          "Google Analytics 4: pages viewed, device/browser, approximate location, and a cookie identifier, processed by Google.",
+          "LINE: if you message the official account, LINE processes that chat under LINE’s policy. We read the messages you send us there.",
+        ],
+      },
+      {
+        heading: "Purpose",
+        paragraphs: [
+          "We use this data to answer enquiries, prepare quotes, run the site, and understand traffic. We do not sell personal data.",
+        ],
+      },
+      {
+        heading: "Legal basis",
+        paragraphs: [
+          "Under Thailand’s Personal Data Protection Act B.E. 2562: your consent when you submit the form, and steps prior to a contract when you ask for a quote.",
+        ],
+      },
+      {
+        heading: "Retention and sharing",
+        paragraphs: [
+          "Contact messages are kept until the enquiry is finished or you ask us to delete them. GA4 follows Google’s retention settings.",
+          "We share data with Google (Firebase and Analytics) as needed to run the site. Google’s servers may be outside Thailand.",
+        ],
+      },
+      {
+        heading: "Your rights",
+        paragraphs: [
+          "You may access, correct, or delete your data, withdraw consent, and complain to the Personal Data Protection Committee. Use the contact page or LINE to exercise these rights.",
+        ],
+      },
+      {
+        heading: "Cookies",
+        paragraphs: [
+          "GA4 uses cookies for measurement. This site does not yet show a cookie banner. Visiting a page that loads the measurement script means you are informed of that cookie.",
+        ],
+      },
+    ],
+  },
+  terms: {
+    meta: {
+      title: "Terms | stdops",
+      description: "Short terms for stdops automation, website, and data work in Thailand.",
+    },
+    title: "Terms",
+    updated: "Updated 11 September 2026",
+    sections: [
+      {
+        heading: "Services",
+        paragraphs: [
+          "stdops provides automation, websites, AI flows, and data work to businesses in Thailand. Figures on this site are starting prices. A written quote is the agreement for each project.",
+        ],
+      },
+      {
+        heading: "Deliverables",
+        paragraphs: [
+          "Scope, timing, and ownership follow the quote both sides accept.",
+        ],
+      },
+      {
+        heading: "Site content",
+        paragraphs: [
+          "Copy, examples, and results on this site are information. They are not a guarantee of a specific business outcome for your project.",
+        ],
+      },
+      {
+        heading: "Use of this site",
+        paragraphs: [
+          "Do not spam, abuse the contact form, or try to access systems you were not given.",
+        ],
+      },
+      {
+        heading: "Law",
+        paragraphs: [
+          "Thai law applies. Disputes are heard in Bangkok. Contact us via the contact page or LINE.",
+        ],
+      },
+    ],
+  },
+  footer: {
+    line: "Chat on LINE",
+    copyright: `© ${new Date().getFullYear()} standard operations studio`,
+    nap: "Bangkok, Thailand",
+    privacyLabel: "Privacy",
+    termsLabel: "Terms",
+  },
 };

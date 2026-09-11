@@ -7,6 +7,15 @@ export const siteCity = "Bangkok";
 export const siteCountryCode = "TH";
 export const siteCountryName = "Thailand";
 
+/** Matches `app/apple-icon.tsx`. Middleware already allows `/apple-icon`. */
+export const siteLogoPath = "/apple-icon";
+export const siteLogoWidth = 180;
+export const siteLogoHeight = 180;
+
+export function siteLogoUrl(siteUrl: string): string {
+  return `${siteUrl}${siteLogoPath}`;
+}
+
 /** Paths that exist in both locales, excluding blog posts. */
 export const staticPagePaths = [
   "/",
@@ -21,6 +30,8 @@ export const staticPagePaths = [
   "/how-it-works",
   "/about",
   "/contact",
+  "/privacy",
+  "/terms",
 ] as const;
 
 export type StaticPagePath = (typeof staticPagePaths)[number];

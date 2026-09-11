@@ -1,0 +1,147 @@
+{
+  "slug": "payment-slip-line-oa",
+  "publishedAt": "2026-09-04",
+  "accent": "red",
+  "draft": true,
+  "th": {
+    "title": "รับทำระบบอ่านสลิปโอนเงินเข้า LINE OA อัตโนมัติ",
+    "excerpt": "ได้ — ระบบอ่านสลิปโอนเงินอัตโนมัติดึงยอดเงินและเลขอ้างอิงมาจับคู่กับรายการที่มีอยู่ ผ่าน LINE OA เริ่มต้นที่ ฿40,000 พร้อมชุดทดสอบก่อนใช้งานจริง",
+    "body": [
+      {
+        "type": "p",
+        "text": "ได้ — ระบบอ่านสลิปโอนเงินอัตโนมัติเป็นที่ต้องการมากสำหรับธุรกิจที่ยังตรวจสลิปด้วยมือ ระบบจะดึงยอดเงินและเลขอ้างอิงจากภาพสลิปที่ส่งเข้า LINE OA แล้วจับคู่กับรายการคำสั่งซื้อที่มีอยู่ให้อัตโนมัติ ไม่ต้องพิมพ์ซ้ำ ไม่ต้องเปิดแอปธนาคารไล่เช็คทีละรายการ"
+      },
+      {
+        "type": "h2",
+        "text": "ทำไมการตรวจสลิปด้วยตาเริ่มเอาไม่อยู่"
+      },
+      {
+        "type": "p",
+        "text": "เมื่อก่อนตรวจสลิปง่ายมาก เปิดรูป อ่านยอด กาถูก จบ แต่ตอนนี้ไม่ง่ายแล้ว เดือนมีนาคม 2025 มีเคสที่แชร์กันมากว่าเครื่องมือสร้างภาพของ ChatGPT แก้สลิปโอนเงินจริงของธนาคารกรุงเทพได้ จากยอด 23,000 บาท กลายเป็น 400,000 บาท เปลี่ยนชื่อผู้โอนด้วย โดยหน้าตาสลิปยังเหมือนเดิม ธนาคารอย่าง SCB และกรุงศรีถึงกับต้องออกคู่มือสอนลูกค้าวิธีเช็คว่าสลิปจริงหรือปลอม"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "สลิปปลอม — แก้ตัวเลขในภาพก่อนส่งมา",
+          "สลิปซ้ำ — เอาสลิปเก่าที่เคยใช้แล้วมาส่งซ้ำกับออเดอร์ใหม่",
+          "ยอดไม่ตรง — โอนจริง แต่โอนน้อยกว่าที่ต้องจ่าย"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "ระบบทำอะไรบ้าง"
+      },
+      {
+        "type": "p",
+        "text": "ทันทีที่สลิปเข้ามาในแชท LINE OA ระบบจะอ่านยอดเงินและเลขอ้างอิง แล้วจับคู่กับรายการคำสั่งซื้อที่มีอยู่ — เป็นขั้นตอนเดียวกับที่พนักงานทำมือทุกวัน แต่ไม่ต้องรอ ไม่ต้องคัดลอกลงสเปรดชีตเอง งานแบบนี้เคยมีเคสศึกษาในไทยที่ใช้ RPA ร่วมกับ OCR ทำมาก่อนแล้ว เพื่อตัดขั้นตอนคีย์ข้อมูลสลิปเข้าระบบบัญชีด้วยมือ"
+      },
+      {
+        "type": "h2",
+        "text": "รวมอะไรบ้าง ราคาเท่าไหร่"
+      },
+      {
+        "type": "p",
+        "text": "งานนี้อยู่ในบริการ AI Flows เริ่มต้นที่ ฿40,000"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "ออกแบบระบบให้ตรงกับรูปแบบสลิปและออเดอร์ของธุรกิจคุณ ไม่ใช่เทมเพลตสำเร็จรูป",
+          "รวมงานตอบแชทลูกค้าทาง LINE ประมวลผลเอกสาร และออกใบเสนอราคาในงานเดียวกัน",
+          "สร้างชุดทดสอบจากสลิปจริง แล้ววัดความแม่นยำก่อนใช้งานจริง",
+          "ปรับจูนต่อให้อีก 30 วันหลังส่งมอบ เมื่อเริ่มเจอสลิปจริงหน้างาน"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "สิ่งที่ระบบนี้ไม่ได้แทนที่"
+      },
+      {
+        "type": "p",
+        "text": "เครื่องมือตรวจสลิปเฉพาะทางอย่าง SlipOK เช็ค QR code ของสลิปกับธนาคารต้นทางแบบเรียลไทม์ ยืนยันว่าโอนจริงหรือไม่ ส่วนระบบของเรามีหน้าที่แคบกว่านั้น คืออ่านสลิปแล้วจับคู่กับออเดอร์ ถ้าปัญหาหลักคือสลิปปลอมทั้งใบ ควรใช้สองระบบคู่กัน ถ้าปัญหาคือเวลาที่พนักงานเสียไปกับการอ่านและจับคู่สลิปจริง ระบบนี้แก้ได้เลย"
+      },
+      {
+        "type": "h2",
+        "text": "จะตัดสินใจยังไง"
+      },
+      {
+        "type": "p",
+        "text": "ลองจับเวลาว่าพนักงานใช้เวลากี่นาทีในการอ่านและจับคู่สลิป 20 ใบล่าสุด ถ้าเกินไม่กี่นาทีต่อวัน หรือเคยเจอสลิปซ้ำมาแล้วสักครั้ง ชุดทดสอบจะบอกได้ภายในไม่กี่วันว่าระบบอ่านสลิปจริงของคุณได้แม่นแค่ไหนก่อนตัดสินใจทำเต็มระบบ แต่ถ้ามีคนโอนเข้ามาแค่สัปดาห์ละไม่กี่ครั้ง ตรวจมือไปก่อนก็ยังพอไหว"
+      }
+    ]
+  },
+  "en": {
+    "title": "Automated Payment-Slip Reading Into LINE OA",
+    "excerpt": "Yes, an agent can read a payment slip, pull the amount and reference, and match it to your records inside LINE OA — starting at ฿40,000, with an eval set to prove it works before go-live.",
+    "body": [
+      {
+        "type": "p",
+        "text": "Yes — automated payment-slip reading into your LINE OA is a common request for businesses still checking bank transfers by hand. The agent reads the slip image, pulls out the amount and the reference number, and matches both against your existing orders. No re-typing, no scrolling through a bank app to confirm a transfer landed."
+      },
+      {
+        "type": "h2",
+        "text": "Why manual slip-checking is starting to break down"
+      },
+      {
+        "type": "p",
+        "text": "Checking slips by eye used to be simple: open the image, read the number, tick it off. It is not simple anymore. In March 2025, a widely shared case showed ChatGPT's image tool editing a real Bangkok Bank slip — a ฿23,000 transfer turned into ฿400,000, the name changed, the layout untouched. Thai banks including SCB and Krungsri now publish public guides on how to check whether a slip is genuine, because enough customers were asking."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Fake slips — the image is edited before it is sent, amount and all.",
+          "Duplicate slips — the same old slip gets reused for a new order.",
+          "Mismatched amounts — the transfer is real, just for less than the order."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "What the agent actually does"
+      },
+      {
+        "type": "p",
+        "text": "It reads the slip the moment it lands in your LINE OA chat, pulls the amount and the reference number, and checks both against your order records — the same first pass your staff run manually now, just without the wait or the copy-paste into a spreadsheet. That matching step is the same problem a Thai back-office automation case study set out to solve with RPA plus OCR: getting slip data into accounting without anyone retyping it by hand."
+      },
+      {
+        "type": "h2",
+        "text": "What's included, and what it costs"
+      },
+      {
+        "type": "p",
+        "text": "This sits inside our AI Flows service, starting at ฿40,000."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The agent is designed around your specific slip and order format, not a generic template.",
+          "Customer support on LINE, document processing, and quotation generation are part of the same build.",
+          "We build an eval set from real slip examples and test accuracy against it before go-live.",
+          "30 days of tuning after delivery, once real slips start hitting the system."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "What this doesn't replace"
+      },
+      {
+        "type": "p",
+        "text": "Dedicated slip-verification tools like SlipOK check a slip's QR code against the issuing bank in real time, confirming the transfer actually happened at all. Our agent's job is narrower: read the slip, extract the numbers, match it to your order. If outright forged transfers are your main risk, pair the two. If your problem is staff time spent reading and matching real slips, the agent alone solves it."
+      },
+      {
+        "type": "h2",
+        "text": "How to decide"
+      },
+      {
+        "type": "p",
+        "text": "Pull your last 20 slips and time how long someone spent reading and matching them by hand. If that's more than a few minutes a day, or you've already had one duplicate-slip incident, the eval set will show within days whether an agent catches your real slips before you commit to the full build. If you get a handful of transfers a week, manual is still fine — do not automate a five-minute task."
+      }
+    ]
+  },
+  "_pipeline": {
+    "status": "ready-for-review",
+    "evalScore": 4.6,
+    "evalFeedback": "Minor, non-blocking polish: the EN title \"Automated Payment-Slip Reading Into LINE OA\" uses Title Case, while every published reference title uses sentence case (e.g. \"What Looker Studio is — and why a dashboard alone is not enough\", \"LINE OA auto-reply: which option is actually worth it?\"). Consider retitling to sentence case for consistency, e.g. \"Automated payment-slip reading into LINE OA\" or a question form matching the live FAQ phrasing. Everything else — grounding, pricing, structure, decision-rule close, TH/EN parity — is solid and publishable as-is.",
+    "generatedAt": "2026-09-04",
+    "attempts": 1
+  }
+}

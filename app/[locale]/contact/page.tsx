@@ -7,7 +7,6 @@ import { LineCta } from "@/components/line-cta";
 import { MessengerLink } from "@/components/messenger-link";
 import { PageShell } from "@/components/page-shell";
 import { PageTitle } from "@/components/page-title";
-import { SectionLabel } from "@/components/section-label";
 
 export async function generateMetadata({
   params,
@@ -19,7 +18,7 @@ export async function generateMetadata({
 }
 
 export default async function ContactPage({ params }: { params: LocaleParams }) {
-  const { dict, bodyFont } = await loadPage(params);
+  const { locale, dict, bodyFont } = await loadPage(params);
   const { contact } = dict;
 
   return (
@@ -35,8 +34,7 @@ export default async function ContactPage({ params }: { params: LocaleParams }) 
       </div>
 
       <div className="border-t border-ink pt-8">
-        <SectionLabel>{contact.formLabel}</SectionLabel>
-        <ContactForm dict={contact} />
+        <ContactForm dict={contact} locale={locale} bodyFont={bodyFont} />
       </div>
     </PageShell>
   );
