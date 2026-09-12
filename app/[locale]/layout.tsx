@@ -1,25 +1,15 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { DocumentLang } from "@/components/document-lang";
 import { Footer } from "@/components/footer";
 import { GaTag } from "@/components/ga-tag";
 import { JsonLd } from "@/components/json-ld";
 import { Nav } from "@/components/nav";
-import { accentHex } from "@/lib/design/accents";
-import { fontMono, fontThai } from "@/lib/fonts";
 import { locales } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { resolveLocale, type LocaleParams } from "@/lib/i18n/resolve-locale";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/json-ld";
 import { pageMetadata } from "@/lib/seo";
-import "../globals.css";
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  viewportFit: "cover",
-  themeColor: accentHex.paper,
-  colorScheme: "light",
-};
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -48,18 +38,14 @@ export default async function LocaleLayout({
   const dict = await getDictionary(locale);
 
   return (
-    <html
-      lang={locale}
-      className={`${fontMono.variable} ${fontThai.variable}`}
-    >
-      <body className="min-h-screen min-h-dvh flex flex-col font-mono">
-        <GaTag />
-        <JsonLd data={organizationJsonLd(dict.meta.description)} />
-        <JsonLd data={websiteJsonLd()} />
-        <Nav dict={dict.nav} locale={locale} />
-        <main className="flex-1">{children}</main>
-        <Footer dict={dict.footer} locale={locale} />
-      </body>
-    </html>
+    <>
+      <DocumentLang locale={locale} />
+      <GaTag />
+      <JsonLd data={organizationJsonLd(dict.meta.description)} />
+      <JsonLd data={websiteJsonLd()} />
+      <Nav dict={dict.nav} locale={locale} />
+      <main className="flex-1">{children}</main>
+      <Footer dict={dict.footer} locale={locale} />
+    </>
   );
 }

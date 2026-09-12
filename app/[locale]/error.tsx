@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { useParams } from "next/navigation";
 import { SystemPage } from "@/components/system-page";
 import { defaultLocale, isLocale } from "@/lib/i18n/config";
 import { bodyFontClass } from "@/lib/i18n/body-font";
@@ -19,9 +19,9 @@ export default function LocaleError({
     console.error(JSON.stringify({ msg: "render_error", digest: error.digest }));
   }, [error.digest]);
 
-  const pathname = usePathname();
-  const segment = pathname.split("/").filter(Boolean)[0] ?? "";
-  const locale = isLocale(segment) ? segment : defaultLocale;
+  const params = useParams();
+  const raw = typeof params?.locale === "string" ? params.locale : "";
+  const locale = isLocale(raw) ? raw : defaultLocale;
   const dict = locale === "th" ? th : en;
 
   return (

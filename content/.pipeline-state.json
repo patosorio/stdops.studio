@@ -1,0 +1,8 @@
+{
+  "payment-slip-line-oa": true,
+  "company-website-cost": false,
+  "looker-studio-dashboard": false,
+  "line-oa-auto-reply": false,
+  "google-workspace-automation-price": false,
+  "sheets-to-a-system": false
+}

@@ -5,6 +5,7 @@ import { formatPostDate } from "@/lib/blog/format-date";
 import { getPublishedPost, listPublishedPosts } from "@/lib/blog/load-posts";
 import { postCopy } from "@/lib/blog/types";
 import { accents } from "@/lib/design/accents";
+import { locales } from "@/lib/i18n/config";
 import { loadPage } from "@/lib/i18n/load-page";
 import { resolveLocale } from "@/lib/i18n/resolve-locale";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
@@ -22,7 +23,9 @@ export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const posts = await listPublishedPosts();
-  return posts.map((post) => ({ slug: post.slug }));
+  return posts.flatMap((post) =>
+    locales.map((locale) => ({ locale, slug: post.slug })),
+  );
 }
 
 export async function generateMetadata({

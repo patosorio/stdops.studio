@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import type { Locale } from "@/lib/i18n/config";
 
 export function LocaleSwitch({ current }: { current: Locale }) {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "";
   const other: Locale = current === "th" ? "en" : "th";
   const rest = pathname.replace(/^\/(th|en)(?=\/|$)/, "") || "";
 

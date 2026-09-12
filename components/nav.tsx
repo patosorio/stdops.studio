@@ -141,7 +141,7 @@ function NavBar({
 
 export function Nav({ dict, locale }: { dict: Dictionary["nav"]; locale: Locale }) {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "";
   const menuId = useId();
 
   useEffect(() => {

@@ -10,7 +10,7 @@ declare global {
 }
 
 export function GaPageView({ measurementId }: { measurementId: string }) {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "";
   const isFirstPath = useRef(true);
 
   useEffect(() => {
