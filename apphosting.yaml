@@ -21,6 +21,20 @@ env:
   - variable: NEXT_PUBLIC_GA_MEASUREMENT_ID
     value: G-1YS57ZNCJX
     availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: stdops-af357.firebaseapp.com
+    availability: [BUILD, RUNTIME]
+  # Public Web-app identifiers (also shipped in the browser bundle). Not secrets.
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: AIzaSyA0A1N_aTYMsflxAl0nPCKSy7iModilYe0
+    availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: 1:268288166156:web:e45864db7bf5d59450a129
+    availability: [BUILD, RUNTIME]
+  # Server-only allowlist. Create with: firebase apphosting:secrets:set ADMIN_ALLOWED_EMAILS
+  - variable: ADMIN_ALLOWED_EMAILS
+    secret: ADMIN_ALLOWED_EMAILS
+    availability: [RUNTIME]
   # Leave LINE / Messenger unset until Patricia pastes HTTPS URLs. Client
   # fallbacks stay `#line` / `#messenger` via lib/env.ts `safeHttpsUrl` (https-only).
   #   NEXT_PUBLIC_LINE_ADD_FRIEND_URL      — https://lin.ee/… or https://line.me/R/ti/p/@…

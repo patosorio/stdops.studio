@@ -16,8 +16,9 @@ function contentSecurityPolicy(): string {
     `script-src ${scriptSrc.join(" ")}`,
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: blob: https:",
-      "font-src 'self' data:",
-    "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://analytics.google.com",
+    "font-src 'self' data:",
+    "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://analytics.google.com https://www.google.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://apis.google.com https://accounts.google.com https://stdops-af357.firebaseapp.com",
+    "frame-src 'self' https://accounts.google.com https://stdops-af357.firebaseapp.com",
     "frame-ancestors 'none'",
     "base-uri 'self'",
     "form-action 'self'",
@@ -66,9 +67,21 @@ const nextConfig: NextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
           },
-          { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+          { key: "Cross-Origin-Opener-Policy", value: "same-origin-allow-popups" },
           { key: "X-Permitted-Cross-Domain-Policies", value: "none" },
           { key: "Content-Security-Policy", value: contentSecurityPolicy() },
+        ],
+      },
+      {
+        source: "/:locale(th|en)",
+        headers: [
+          { key: "Cache-Control", value: "private, no-cache, must-revalidate" },
+        ],
+      },
+      {
+        source: "/:locale(th|en)/:path*",
+        headers: [
+          { key: "Cache-Control", value: "private, no-cache, must-revalidate" },
         ],
       },
     ];

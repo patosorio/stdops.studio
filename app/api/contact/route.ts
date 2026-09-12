@@ -2,13 +2,12 @@ import { NextResponse } from "next/server";
 import {
   allowContactFrom,
   canWriteContact,
-  contactContentLengthAllowed,
   isAllowedContactOrigin,
-  isJsonContentType,
+  MAX_CONTACT_BODY_BYTES,
   parseContactBody,
-  readContactJsonBody,
   saveContactMessage,
 } from "@/lib/contact/submit";
+import { contentLengthAllowed, isJsonContentType, readJsonBody } from "@/lib/http";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -36,14 +35,14 @@ export async function POST(request: Request): Promise<NextResponse> {
   if (!isAllowedContactOrigin(request)) {
     return fail(400);
   }
-  if (!isJsonContentType(request) || !contactContentLengthAllowed(request)) {
+  if (!isJsonContentType(request) || !contentLengthAllowed(request, MAX_CONTACT_BODY_BYTES)) {
     return fail(400);
   }
   if (!allowContactFrom(clientIp(request))) {
     return fail(429);
   }
 
-  const body = await readContactJsonBody(request);
+  const body = await readJsonBody(request, MAX_CONTACT_BODY_BYTES);
   if (body === undefined) {
     return fail(400);
   }

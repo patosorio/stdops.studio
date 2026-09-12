@@ -33,7 +33,7 @@ The Next.js app lives at the repository root — not in a nested `website/` fold
 
 - Next.js 15 App Router, TypeScript strict, React 19
 - Tailwind CSS v4 (CSS-first config via `@theme` in `app/globals.css` — no `tailwind.config.ts`)
-- Firebase App Hosting (SSR/ISR) for deploy; Firebase Auth reserved for future internal apps
+- Firebase App Hosting (SSR/ISR) for deploy; Firebase Auth (email/password, allowlist) for `/admin`
 - Fonts: JetBrains Mono (structural/UI), IBM Plex Sans Thai (Thai body), Helvetica Neue (EN body)
 
 ## Out of scope for this repo right now

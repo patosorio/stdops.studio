@@ -1,0 +1,31 @@
+---
+description: Admin panel conventions — Auth session cookies, Admin-SDK Firestore, blog CMS
+globs: ["app/admin/**/*.tsx", "app/api/admin/**/*.ts", "lib/admin/**/*.ts", "lib/firebase/**/*.ts", "lib/blog/**/*.ts"]
+alwaysApply: false
+---
+
+# Admin panel
+
+`/admin` is an internal tool, not part of the public TH/EN site. No `lib/i18n`
+dictionaries, no `[locale]` layout, excluded from locale-redirect middleware.
+
+## Firestore is Admin SDK only
+
+Public pages and `/admin` both read/write Firestore via `firebase-admin` in Server
+Components and Route Handlers (`lib/firebase/admin.ts`). The browser never talks to
+Firestore. `firestore.rules` stays deny-all. Do not add the client Firestore SDK.
+
+## Auth
+
+Firebase Auth email/password (client SDK in `lib/firebase/client.ts`, Auth only) mints
+an ID token; `POST /api/admin/session` verifies it against `ADMIN_ALLOWED_EMAILS` and
+sets an httpOnly session cookie (`lib/admin/session.ts`). Guard writes in route
+handlers and `/admin/blog/layout.tsx` — never a top-level `/admin` layout, or login
+becomes unreachable.
+
+## Blog posts
+
+`parsePost()` in `lib/blog/parse-post.ts` is the single validator for JSON files,
+Firestore reads, and admin form submissions. Do not add a second parser or `zod`.
+Writes go through route handlers (`runtime = "nodejs"`, `dynamic = "force-dynamic"`,
+`{ ok: boolean }`), then `revalidateTag(BLOG_POSTS_TAG)`.

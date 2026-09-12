@@ -7,16 +7,17 @@ import { defaultLocale, isLocale } from "@/lib/i18n/config";
 import { bodyFontClass } from "@/lib/i18n/body-font";
 import { en } from "@/lib/i18n/dictionaries/en";
 import { th } from "@/lib/i18n/dictionaries/th";
+import { hardReload, reloadOnceForPath } from "@/lib/nav-recovery";
 
 export default function LocaleError({
   error,
-  reset,
 }: {
   error: Error & { digest?: string };
   reset: () => void;
 }) {
   useEffect(() => {
     console.error(JSON.stringify({ msg: "render_error", digest: error.digest }));
+    reloadOnceForPath();
   }, [error.digest]);
 
   const params = useParams();
@@ -33,7 +34,7 @@ export default function LocaleError({
       homeLabel={dict.system.homeLabel}
       lineLabel={dict.footer.line}
       retryLabel={dict.system.retryLabel}
-      onRetry={reset}
+      onRetry={hardReload}
     />
   );
 }

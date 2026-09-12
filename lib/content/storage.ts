@@ -51,6 +51,7 @@ export const localServiceImageSrc: Record<ServiceImageId, string> = {
 
 export const contentImagesDocPath = "content/images";
 export const contactMessagesCollection = "contactMessages";
+export const blogPostsCollection = "blogPosts";
 
 export type ContentImages = {
   aboutPhotoUrl: string;

@@ -1,19 +1,7 @@
-"use client";
-
-import type { MouseEvent } from "react";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 import type { ServiceEntry } from "@/lib/i18n/dictionaries/types";
 import { AccentDot } from "./accent-dot";
-
-function markServicesSection(event: MouseEvent<HTMLAnchorElement>) {
-  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) {
-    return;
-  }
-  if (window.location.hash === "#services") return;
-  const url = `${window.location.pathname}${window.location.search}#services`;
-  window.history.replaceState(window.history.state, "", url);
-}
 
 export function ServiceRow({
   service,
@@ -25,7 +13,6 @@ export function ServiceRow({
   return (
     <Link
       href={`/${locale}${service.href}`}
-      onClick={markServicesSection}
       className="group grid grid-cols-1 md:col-span-3 md:grid-cols-subgrid gap-x-6 gap-y-1 py-5 border-t border-ink last:border-b no-underline items-baseline"
     >
       <span className="font-bold text-base flex items-center gap-2 min-w-0 text-left">

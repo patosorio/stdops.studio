@@ -7,6 +7,7 @@ import { defaultLocale, isLocale, type Locale } from "@/lib/i18n/config";
 import { bodyFontClass } from "@/lib/i18n/body-font";
 import { en } from "@/lib/i18n/dictionaries/en";
 import { th } from "@/lib/i18n/dictionaries/th";
+import { hardReload, reloadOnceForPath } from "@/lib/nav-recovery";
 import "./globals.css";
 
 function localeFromLocation(): Locale {
@@ -17,13 +18,13 @@ function localeFromLocation(): Locale {
 
 export default function GlobalError({
   error,
-  reset,
 }: {
   error: Error & { digest?: string };
   reset: () => void;
 }) {
   useEffect(() => {
     console.error(JSON.stringify({ msg: "global_error", digest: error.digest }));
+    reloadOnceForPath();
   }, [error.digest]);
 
   const locale = localeFromLocation();
@@ -41,7 +42,7 @@ export default function GlobalError({
             homeLabel={dict.system.homeLabel}
             lineLabel={dict.footer.line}
             retryLabel={dict.system.retryLabel}
-            onRetry={reset}
+            onRetry={hardReload}
           />
         </main>
       </body>

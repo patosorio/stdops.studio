@@ -2,6 +2,7 @@ import "server-only";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { cert, getApps, initializeApp, type App } from "firebase-admin/app";
+import { getAuth, type Auth } from "firebase-admin/auth";
 import { getFirestore, type Firestore } from "firebase-admin/firestore";
 import { firebaseProjectId, getStorageBucket } from "@/lib/content/storage";
 
@@ -62,4 +63,8 @@ export function getFirebaseAdminApp(): App {
 
 export function getContentFirestore(): Firestore {
   return getFirestore(getFirebaseAdminApp());
+}
+
+export function getFirebaseAdminAuth(): Auth {
+  return getAuth(getFirebaseAdminApp());
 }

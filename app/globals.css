@@ -76,7 +76,7 @@ a { color: inherit; }
 ::selection { background: var(--color-accent-blue); color: var(--color-paper); }
 .tabular-nums { font-variant-numeric: tabular-nums; }
 
-input, textarea, button {
+input:not([type="checkbox"]):not([type="radio"]), textarea, button {
   font-family: inherit;
   -webkit-appearance: none;
   appearance: none;
