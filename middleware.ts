@@ -4,6 +4,17 @@ import { defaultLocale, locales } from "@/lib/i18n/config";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Admin is not part of the TH/EN site. /th/admin and /en/admin 404 inside
+  // [locale] and never show the login form — send them to /admin.
+  for (const locale of locales) {
+    const prefixed = `/${locale}/admin`;
+    if (pathname === prefixed || pathname.startsWith(`${prefixed}/`)) {
+      const url = request.nextUrl.clone();
+      url.pathname = pathname.slice(`/${locale}`.length) || "/";
+      return NextResponse.redirect(url);
+    }
+  }
+
   const hasLocale = locales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
   );
