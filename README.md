@@ -67,14 +67,12 @@ Variables the site reads today:
 | Variable | Purpose |
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Canonical origin (sitemap, Open Graph, JSON-LD) |
-| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | Search Console HTML-tag content value |
-| `NEXT_PUBLIC_LINE_ADD_FRIEND_URL` | LINE Official Account add-friend link |
+| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | Search Console HTML-tag `content=` value |
+| `NEXT_PUBLIC_LINE_ADD_FRIEND_URL` | LINE add-friend HTTPS URL (personal `~id` or Official Account) |
 | `NEXT_PUBLIC_MESSENGER_URL` | Messenger fallback link |
 | `NEXT_PUBLIC_FIREBASE_PROJECT_ID` | Firebase project (`stdops-af357`) |
 | `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` | Storage bucket (`stdops-af357.firebasestorage.app`) |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Google Analytics 4 measurement ID (`G-…`) |
-| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | Search Console HTML-tag `content=` value |
-| `NEXT_PUBLIC_LINE_ADD_FRIEND_URL` | LINE Official Account add-friend HTTPS URL |
 
 About, Work, and service screenshots live in Firebase Storage (`content/**`). URLs are stored in Firestore `content/images`. Run `npm run content:sync-images` with Application Default Credentials to upload. Contact form posts land in Firestore `contactMessages` via `/api/contact` (Admin SDK). The rest of `.env.example` (Firebase client keys, Stripe, LINE channel tokens, Meta Pixel) is reserved for later phases.
 

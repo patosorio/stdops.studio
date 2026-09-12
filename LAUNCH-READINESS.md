@@ -6,7 +6,7 @@ Audit date: 11 Sep 2026. This file is the handoff for a new chat. **Do not rebui
 
 ## Verdict
 
-Not fully launch-ready as a professional commercial site. SEO plumbing is strong. Remaining blockers are production LINE URL, Search Console verification token, legal pages, and CI.
+Not fully launch-ready as a professional commercial site. SEO plumbing is strong. LINE CTA is wired to the personal ID (`patosorio.88`); remaining blockers are Search Console verification token, legal pages, and CI.
 
 ## Already in good shape (do not redo)
 
@@ -55,13 +55,11 @@ Public URL pattern:
 
 ## Open P0 — still blocking a pro launch
 
-### 1. LINE add-friend URL (env)
+### 1. LINE add-friend URL (env) — wired, personal ID for now
 
-Every LINE button uses `getLineAddFriendUrl()` → `NEXT_PUBLIC_LINE_ADD_FRIEND_URL`, fallback `#line`.
+Every LINE button uses `getLineAddFriendUrl()` → `NEXT_PUBLIC_LINE_ADD_FRIEND_URL`.
 
-**Need from Patricia:** HTTPS add-friend URL from LINE Official Account Manager (`https://lin.ee/…` or `https://line.me/R/ti/p/@…`).
-
-Then set in `.env.local` and `apphosting.yaml` as `NEXT_PUBLIC_LINE_ADD_FRIEND_URL` (`availability: [BUILD, RUNTIME]`). Redeploy App Hosting so the client bundle picks it up.
+Currently `https://line.me/ti/p/~patosorio.88` (personal LINE ID). When the Official Account exists, replace with `https://lin.ee/…` or `https://line.me/R/ti/p/@…` in `.env.local` and `apphosting.yaml`, then redeploy.
 
 Optional: `NEXT_PUBLIC_MESSENGER_URL` the same way (currently `#messenger`).
 
@@ -136,7 +134,7 @@ Read LAUNCH-READINESS.md at the repo root. Continue P0: wire LINE and Search Con
 
 Paste in chat (these are public client IDs, except the service-account **path**):
 
-1. `NEXT_PUBLIC_LINE_ADD_FRIEND_URL` — `https://lin.ee/…` or `https://line.me/R/ti/p/@…`
+1. When the business LINE OA is ready: replace `NEXT_PUBLIC_LINE_ADD_FRIEND_URL` with `https://lin.ee/…` or `https://line.me/R/ti/p/@…`
 2. `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` — Search Console HTML-tag content token
 3. Optional: `NEXT_PUBLIC_MESSENGER_URL`
 4. Optional for local contact testing: absolute path to Firebase service account JSON as `GOOGLE_APPLICATION_CREDENTIALS` in `.env.local` (never commit the file)

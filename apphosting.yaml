@@ -35,10 +35,13 @@ env:
   - variable: ADMIN_ALLOWED_EMAILS
     secret: ADMIN_ALLOWED_EMAILS
     availability: [RUNTIME]
-  # Leave LINE / Messenger unset until Patricia pastes HTTPS URLs. Client
-  # fallbacks stay `#line` / `#messenger` via lib/env.ts `safeHttpsUrl` (https-only).
-  #   NEXT_PUBLIC_LINE_ADD_FRIEND_URL      — https://lin.ee/… or https://line.me/R/ti/p/@…
-  #   NEXT_PUBLIC_MESSENGER_URL            — optional Messenger https link
+  # Personal LINE ID until the Official Account exists. Swap this for
+  # https://lin.ee/… or https://line.me/R/ti/p/@… when the business OA is ready.
+  - variable: NEXT_PUBLIC_LINE_ADD_FRIEND_URL
+    value: https://line.me/ti/p/~patosorio.88
+    availability: [BUILD, RUNTIME]
+  # Optional later:
+  #   NEXT_PUBLIC_MESSENGER_URL            — Messenger https link
   #   NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION — Search Console HTML-tag `content=`
   # Never put a Firebase service-account JSON here. App Hosting uses ADC.
   # Other secrets: `firebase apphosting:secrets:set <NAME>` then `secret: <NAME>`.
