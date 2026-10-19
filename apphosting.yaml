@@ -1,8 +1,9 @@
 # https://firebase.google.com/docs/app-hosting/configure
 runConfig:
-  # Keep one warm instance so the first visitor after idle is not a cold start.
+  # Scale to zero when idle. Cold starts are acceptable so we are not billed
+  # for an idle Cloud Run instance.
   # App Hosting applies this at the Cloud Run service (run.googleapis.com/minScale).
-  minInstances: 1
+  minInstances: 0
   maxInstances: 2
   concurrency: 80
   cpu: 1
