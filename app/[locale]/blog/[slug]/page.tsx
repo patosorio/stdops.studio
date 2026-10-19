@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { formatPostDate } from "@/lib/blog/format-date";
-import { getPublishedPost, listPublishedPosts } from "@/lib/blog/load-posts";
+import { getPublishedPost } from "@/lib/blog/load-posts";
 import { postCopy } from "@/lib/blog/types";
 import { accents } from "@/lib/design/accents";
-import { locales } from "@/lib/i18n/config";
 import { loadPage } from "@/lib/i18n/load-page";
 import { resolveLocale } from "@/lib/i18n/resolve-locale";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/json-ld";
@@ -19,14 +18,7 @@ import { PageTitle } from "@/components/page-title";
 
 type BlogPostParams = Promise<{ locale: string; slug: string }>;
 
-export const dynamicParams = true;
-
-export async function generateStaticParams() {
-  const posts = await listPublishedPosts();
-  return posts.flatMap((post) =>
-    locales.map((locale) => ({ locale, slug: post.slug })),
-  );
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,

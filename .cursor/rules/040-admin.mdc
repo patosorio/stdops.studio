@@ -28,4 +28,4 @@ becomes unreachable.
 `parsePost()` in `lib/blog/parse-post.ts` is the single validator for JSON files,
 Firestore reads, and admin form submissions. Do not add a second parser or `zod`.
 Writes go through route handlers (`runtime = "nodejs"`, `dynamic = "force-dynamic"`,
-`{ ok: boolean }`), then `revalidateTag(BLOG_POSTS_TAG)`.
+`{ ok: boolean }`). Public pages read `blogPosts` on each request.

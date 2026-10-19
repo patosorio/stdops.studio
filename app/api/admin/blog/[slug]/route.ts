@@ -1,9 +1,7 @@
 import { FieldValue } from "firebase-admin/firestore";
-import { revalidateTag } from "next/cache";
 import { NextResponse } from "next/server";
 import { MAX_ADMIN_BLOG_BODY_BYTES, parseAdminPost } from "@/lib/admin/parse-body";
 import { getAdminSession } from "@/lib/admin/session";
-import { BLOG_POSTS_TAG } from "@/lib/blog/load-posts";
 import { blogPostDocument } from "@/lib/blog/post-document";
 import { blogPostsCollection } from "@/lib/content/storage";
 import { getContentFirestore } from "@/lib/firebase/admin";
@@ -65,7 +63,6 @@ export async function PUT(
       },
       { merge: true },
     );
-    revalidateTag(BLOG_POSTS_TAG);
     return ok();
   } catch (error) {
     const reason = error instanceof Error ? error.message : "unknown";

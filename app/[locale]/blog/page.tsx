@@ -10,6 +10,8 @@ import { BlogPostRow } from "@/components/blog-post-row";
 import { PageShell } from "@/components/page-shell";
 import { PageTitle } from "@/components/page-title";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({
   params,
 }: {

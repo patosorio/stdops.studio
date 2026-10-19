@@ -4,6 +4,8 @@ import { getSiteUrl } from "@/lib/env";
 import { locales, type Locale } from "@/lib/i18n/config";
 import { absoluteUrl, staticPagePaths } from "@/lib/site";
 
+export const dynamic = "force-dynamic";
+
 function languageAlternates(path: string): Record<string, string> {
   const siteUrl = getSiteUrl();
   return {

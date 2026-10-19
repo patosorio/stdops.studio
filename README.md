@@ -84,7 +84,7 @@ On Firebase App Hosting, set public env in `apphosting.yaml`.
 app/[locale]/          # Locale-scoped pages
 components/            # One named export per file
 lib/i18n/              # Typed TH/EN dictionaries
-lib/blog/              # Blog loader (JSON under content/blog/)
+lib/blog/              # Blog posts in Firestore `blogPosts`
 lib/design/            # Accent color map
 middleware.ts          # Redirects unprefixed paths to /th
 apphosting.yaml        # Firebase App Hosting config
@@ -92,7 +92,7 @@ apphosting.yaml        # Firebase App Hosting config
 
 Copy lives in `lib/i18n/dictionaries/th.ts` and `en.ts`, typed by `types.ts`. Do not hardcode English (or Thai) strings in component bodies.
 
-Blog posts are JSON files in `content/blog/`. Filename must match `slug`. Posts with `"draft": true` are omitted from the public index, post pages, and sitemap.
+Blog posts live in Firestore `blogPosts`. The doc id is the slug, `publishedAt` is a `YYYY-MM-DD` string, and `draft: true` hides a post. Edit them in `/admin/blog` or the Firebase console.
 
 ## Design
 

@@ -11,8 +11,7 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "content:sync-images": "tsx scripts/sync-content-images.ts",
-    "content:sync-blog": "tsx scripts/sync-blog-content.ts"
+    "content:sync-images": "tsx scripts/sync-content-images.ts"
   },
   "dependencies": {
     "firebase": "^12.19.0",
